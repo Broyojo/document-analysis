@@ -1,3 +1,6 @@
 openai
 tiktoken
 fastapi
+imgkit
+pdf2image
+python-magic
