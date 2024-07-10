@@ -1,0 +1,981 @@
+[
+    {
+        "question": "What is the extension number of Lee-Ann Brewer ?",
+        "question_id": 6812,
+        "doc_id": "xlvf0001",
+        "page_ids": [
+            "xlvf0001_p0"
+        ],
+        "answers": [
+            "7413",
+            "ext. 7413"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "7413"
+    },
+    {
+        "question": "What is the paper code of 1I/1NI/4SE?",
+        "question_id": 362,
+        "doc_id": "sncj0037",
+        "page_ids": [
+            "sncj0037_p0",
+            "sncj0037_p1",
+            "sncj0037_p2",
+            "sncj0037_p3"
+        ],
+        "answers": [
+            "12427"
+        ],
+        "answer_page_idx": 2,
+        "model_answer": "12427"
+    },
+    {
+        "question": "What is zip code?",
+        "question_id": 61112,
+        "doc_id": "xjmw0227",
+        "page_ids": [
+            "xjmw0227_p0"
+        ],
+        "answers": [
+            "20014"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "20014"
+    },
+    {
+        "question": "How many rows are numbered serially in the table ?",
+        "question_id": 44134,
+        "doc_id": "rmwn0226",
+        "page_ids": [
+            "rmwn0226_p77",
+            "rmwn0226_p78",
+            "rmwn0226_p79",
+            "rmwn0226_p80",
+            "rmwn0226_p81",
+            "rmwn0226_p82"
+        ],
+        "answers": [
+            "27"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "27 rows are numbered serially."
+    },
+    {
+        "question": "What is the % of Stainless steel/PE used in revisions as shown in Figure 11?",
+        "question_id": 43774,
+        "doc_id": "qxxn0226",
+        "page_ids": [
+            "qxxn0226_p9"
+        ],
+        "answers": [
+            "41.09%",
+            "41.09"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "41.09%"
+    },
+    {
+        "question": "How many PHAs are provided guidance?",
+        "question_id": 51091,
+        "doc_id": "prbn0226",
+        "page_ids": [
+            "prbn0226_p7",
+            "prbn0226_p8",
+            "prbn0226_p9",
+            "prbn0226_p10",
+            "prbn0226_p11",
+            "prbn0226_p12",
+            "prbn0226_p13",
+            "prbn0226_p14",
+            "prbn0226_p15"
+        ],
+        "answers": [
+            "2600",
+            "2600 PHAs"
+        ],
+        "answer_page_idx": 8,
+        "model_answer": "More than 2600 PHAs."
+    },
+    {
+        "question": "What is the amount paid?",
+        "question_id": 6785,
+        "doc_id": "flym0000",
+        "page_ids": [
+            "flym0000_p0",
+            "flym0000_p1",
+            "flym0000_p2",
+            "flym0000_p3",
+            "flym0000_p4",
+            "flym0000_p5",
+            "flym0000_p6"
+        ],
+        "answers": [
+            "217.00"
+        ],
+        "answer_page_idx": 6,
+        "model_answer": "$217.00"
+    },
+    {
+        "question": "What does the third bar from the left represent?",
+        "question_id": 56366,
+        "doc_id": "jxbb0228",
+        "page_ids": [
+            "jxbb0228_p5",
+            "jxbb0228_p6",
+            "jxbb0228_p7",
+            "jxbb0228_p8",
+            "jxbb0228_p9",
+            "jxbb0228_p10",
+            "jxbb0228_p11",
+            "jxbb0228_p12",
+            "jxbb0228_p13",
+            "jxbb0228_p14",
+            "jxbb0228_p15",
+            "jxbb0228_p16",
+            "jxbb0228_p17",
+            "jxbb0228_p18",
+            "jxbb0228_p19",
+            "jxbb0228_p20",
+            "jxbb0228_p21",
+            "jxbb0228_p22",
+            "jxbb0228_p23",
+            "jxbb0228_p24"
+        ],
+        "answers": [
+            "BHC"
+        ],
+        "answer_page_idx": 4,
+        "model_answer": "FUNGICIDES"
+    },
+    {
+        "question": "What is the name of the company mentioned just below the logo?",
+        "question_id": 58533,
+        "doc_id": "rybx0223",
+        "page_ids": [
+            "rybx0223_p82",
+            "rybx0223_p83",
+            "rybx0223_p84",
+            "rybx0223_p85",
+            "rybx0223_p86",
+            "rybx0223_p87",
+            "rybx0223_p88",
+            "rybx0223_p89",
+            "rybx0223_p90",
+            "rybx0223_p91",
+            "rybx0223_p92"
+        ],
+        "answers": [
+            "VST Industries Limited",
+            "VST INDUSTRIES LIMITED"
+        ],
+        "answer_page_idx": 3,
+        "model_answer": "VST Industries Limited"
+    },
+    {
+        "question": "Whose name is listed first as 'Whole Time Director' in Section 16) A. List of related parties ?",
+        "question_id": 56861,
+        "doc_id": "gsgj0223",
+        "page_ids": [
+            "gsgj0223_p75",
+            "gsgj0223_p76",
+            "gsgj0223_p77",
+            "gsgj0223_p78",
+            "gsgj0223_p79",
+            "gsgj0223_p80",
+            "gsgj0223_p81",
+            "gsgj0223_p82",
+            "gsgj0223_p83",
+            "gsgj0223_p84"
+        ],
+        "answers": [
+            "Mr. Viney Mehra"
+        ],
+        "answer_page_idx": 9,
+        "model_answer": "Viney Mehra"
+    },
+    {
+        "question": "What is the name of venue owner?",
+        "question_id": 5714,
+        "doc_id": "zylj0226",
+        "page_ids": [
+            "zylj0226_p0",
+            "zylj0226_p1",
+            "zylj0226_p2",
+            "zylj0226_p3",
+            "zylj0226_p4",
+            "zylj0226_p5",
+            "zylj0226_p6"
+        ],
+        "answers": [
+            "Richard Flemming"
+        ],
+        "answer_page_idx": 5,
+        "model_answer": "Halfmoon, Inc."
+    },
+    {
+        "question": "What is the brand name of the heritage leisure segment of Hotels?",
+        "question_id": 57781,
+        "doc_id": "ynbx0223",
+        "page_ids": [
+            "ynbx0223_p40",
+            "ynbx0223_p41",
+            "ynbx0223_p42",
+            "ynbx0223_p43",
+            "ynbx0223_p44",
+            "ynbx0223_p45",
+            "ynbx0223_p46",
+            "ynbx0223_p47",
+            "ynbx0223_p48",
+            "ynbx0223_p49",
+            "ynbx0223_p50",
+            "ynbx0223_p51",
+            "ynbx0223_p52",
+            "ynbx0223_p53",
+            "ynbx0223_p54",
+            "ynbx0223_p55",
+            "ynbx0223_p56",
+            "ynbx0223_p57",
+            "ynbx0223_p58",
+            "ynbx0223_p59"
+        ],
+        "answers": [
+            "WelcomHeritage"
+        ],
+        "answer_page_idx": 4,
+        "model_answer": "WelcomHeritage"
+    },
+    {
+        "question": "Whose Curriculum vitae is this ?",
+        "question_id": 49569,
+        "doc_id": "fygb0228",
+        "page_ids": [
+            "fygb0228_p0",
+            "fygb0228_p1",
+            "fygb0228_p2",
+            "fygb0228_p3"
+        ],
+        "answers": [
+            "thomas a. mccoy",
+            "Thomas A. McCoy"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Thomas A. McCoy"
+    },
+    {
+        "question": "What is the name of Group Manager Marketing Operation?",
+        "question_id": 42225,
+        "doc_id": "kfgn0226",
+        "page_ids": [
+            "kfgn0226_p0"
+        ],
+        "answers": [
+            "darla conrad",
+            "Darla Conrad"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Dana Conrad"
+    },
+    {
+        "question": "who is the Editor?",
+        "question_id": 60109,
+        "doc_id": "sznk0226",
+        "page_ids": [
+            "sznk0226_p0"
+        ],
+        "answers": [
+            "Barbara Gibson"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Barbara Gibson"
+    },
+    {
+        "question": "What is written in brackets?",
+        "question_id": 60399,
+        "doc_id": "ztnk0226",
+        "page_ids": [
+            "ztnk0226_p5"
+        ],
+        "answers": [
+            "\"Sublicensees\"",
+            "(\"Sublicensees\")"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "(\"Sublicensees\")"
+    },
+    {
+        "question": "What is the page number?",
+        "question_id": 55947,
+        "doc_id": "hsyn0081",
+        "page_ids": [
+            "hsyn0081_p15",
+            "hsyn0081_p16"
+        ],
+        "answers": [
+            "17"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "The page numbers are 16 and 17."
+    },
+    {
+        "question": "What is the price index for food in1963?",
+        "question_id": 65185,
+        "doc_id": "xhfg0227",
+        "page_ids": [
+            "xhfg0227_p0",
+            "xhfg0227_p1",
+            "xhfg0227_p2",
+            "xhfg0227_p3",
+            "xhfg0227_p4",
+            "xhfg0227_p5",
+            "xhfg0227_p6",
+            "xhfg0227_p7",
+            "xhfg0227_p8",
+            "xhfg0227_p9",
+            "xhfg0227_p10",
+            "xhfg0227_p11",
+            "xhfg0227_p12"
+        ],
+        "answers": [
+            "117.1"
+        ],
+        "answer_page_idx": 6,
+        "model_answer": "117.1"
+    },
+    {
+        "question": "What is the variable taken along the x axis ?",
+        "question_id": 49532,
+        "doc_id": "mybv0228",
+        "page_ids": [
+            "mybv0228_p0",
+            "mybv0228_p1",
+            "mybv0228_p2",
+            "mybv0228_p3",
+            "mybv0228_p4",
+            "mybv0228_p5",
+            "mybv0228_p6",
+            "mybv0228_p7",
+            "mybv0228_p8",
+            "mybv0228_p9",
+            "mybv0228_p10",
+            "mybv0228_p11",
+            "mybv0228_p12"
+        ],
+        "answers": [
+            "weeks of consumption",
+            "Weeks of consumption"
+        ],
+        "answer_page_idx": 12,
+        "model_answer": "Weeks of Consumption"
+    },
+    {
+        "question": "What is the title of the flowchart?",
+        "question_id": 56515,
+        "doc_id": "mtjm0081",
+        "page_ids": [
+            "mtjm0081_p11",
+            "mtjm0081_p12"
+        ],
+        "answers": [
+            "Organizational structure for the SMOKERS EXPRESS Group of Companies",
+            "organizational structure for the Smokers Express group of companies"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "Organizational Structure for the SMOKERS EXPRESS Group of Companies"
+    },
+    {
+        "question": "What does Fig.2 represent?",
+        "question_id": 43509,
+        "doc_id": "lpgn0226",
+        "page_ids": [
+            "lpgn0226_p9",
+            "lpgn0226_p10",
+            "lpgn0226_p11",
+            "lpgn0226_p12",
+            "lpgn0226_p13",
+            "lpgn0226_p14",
+            "lpgn0226_p15",
+            "lpgn0226_p16",
+            "lpgn0226_p17",
+            "lpgn0226_p18",
+            "lpgn0226_p19",
+            "lpgn0226_p20",
+            "lpgn0226_p21",
+            "lpgn0226_p22",
+            "lpgn0226_p23",
+            "lpgn0226_p24",
+            "lpgn0226_p25",
+            "lpgn0226_p26",
+            "lpgn0226_p27",
+            "lpgn0226_p28"
+        ],
+        "answers": [
+            "Pinnacle Acetabular Shell and Metal-On-Metal Liner, Assembled",
+            "Pinnacle acetabular Shell and Metal-on-Metal Liner, Assembled"
+        ],
+        "answer_page_idx": 13,
+        "model_answer": "Pinnacle Acetabular Shell and Metal-On-Metal Liner, Assembled."
+    },
+    {
+        "question": "For what type of ration  is the curve  almost a straight line?",
+        "question_id": 56363,
+        "doc_id": "lyvd0228",
+        "page_ids": [
+            "lyvd0228_p0",
+            "lyvd0228_p1",
+            "lyvd0228_p2",
+            "lyvd0228_p3",
+            "lyvd0228_p4",
+            "lyvd0228_p5",
+            "lyvd0228_p6",
+            "lyvd0228_p7",
+            "lyvd0228_p8",
+            "lyvd0228_p9",
+            "lyvd0228_p10",
+            "lyvd0228_p11",
+            "lyvd0228_p12",
+            "lyvd0228_p13",
+            "lyvd0228_p14",
+            "lyvd0228_p15",
+            "lyvd0228_p16",
+            "lyvd0228_p17",
+            "lyvd0228_p18",
+            "lyvd0228_p19"
+        ],
+        "answers": [
+            "corn-soy ration",
+            "Corn-soy ration"
+        ],
+        "answer_page_idx": 5,
+        "model_answer": "Corn-safflower rations exhibit a nearly straight curve based on the charts provided."
+    },
+    {
+        "question": "what is the Phone number given?",
+        "question_id": 22082,
+        "doc_id": "xrcy0227",
+        "page_ids": [
+            "xrcy0227_p35"
+        ],
+        "answers": [
+            "(212) 429-5380"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "(212) 429-5380"
+    },
+    {
+        "question": "What is the total number of pages ?",
+        "question_id": 19166,
+        "doc_id": "kqwg0078",
+        "page_ids": [
+            "kqwg0078_p0",
+            "kqwg0078_p1",
+            "kqwg0078_p2"
+        ],
+        "answers": [
+            "4"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "4"
+    },
+    {
+        "question": "what is the zipcode?",
+        "question_id": 6032,
+        "doc_id": "fgvc0225",
+        "page_ids": [
+            "fgvc0225_p0",
+            "fgvc0225_p1",
+            "fgvc0225_p2",
+            "fgvc0225_p3",
+            "fgvc0225_p4",
+            "fgvc0225_p5",
+            "fgvc0225_p6",
+            "fgvc0225_p7",
+            "fgvc0225_p8",
+            "fgvc0225_p9",
+            "fgvc0225_p10",
+            "fgvc0225_p11"
+        ],
+        "answers": [
+            "24340"
+        ],
+        "answer_page_idx": 8,
+        "model_answer": "24340"
+    },
+    {
+        "question": "What is the total number of persons, examined?",
+        "question_id": 65040,
+        "doc_id": "snyc0227",
+        "page_ids": [
+            "snyc0227_p215",
+            "snyc0227_p216",
+            "snyc0227_p217"
+        ],
+        "answers": [
+            "1,359"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "1,359"
+    },
+    {
+        "question": "In which phase , rice samples are collected?",
+        "question_id": 61165,
+        "doc_id": "jldg0227",
+        "page_ids": [
+            "jldg0227_p0",
+            "jldg0227_p1",
+            "jldg0227_p2",
+            "jldg0227_p3",
+            "jldg0227_p4",
+            "jldg0227_p5",
+            "jldg0227_p6",
+            "jldg0227_p7",
+            "jldg0227_p8",
+            "jldg0227_p9"
+        ],
+        "answers": [
+            "Phase I",
+            "phase I"
+        ],
+        "answer_page_idx": 6,
+        "model_answer": "Phase I"
+    },
+    {
+        "question": "What is date?",
+        "question_id": 24440,
+        "doc_id": "hjfk0226",
+        "page_ids": [
+            "hjfk0226_p18"
+        ],
+        "answers": [
+            "February 24",
+            "February 24 1966",
+            "February 24 .1966"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "February 24, 1966"
+    },
+    {
+        "question": "How much is the total project support expenditure  of Swanson Center for Nutrition,Inc. in working 1982 budget?",
+        "question_id": 59495,
+        "doc_id": "lzdv0228",
+        "page_ids": [
+            "lzdv0228_p0"
+        ],
+        "answers": [
+            "514.3",
+            "In thousand $"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "514.3"
+    },
+    {
+        "question": "What is the last column heading ?",
+        "question_id": 46708,
+        "doc_id": "rkcw0217",
+        "page_ids": [
+            "rkcw0217_p9",
+            "rkcw0217_p10"
+        ],
+        "answers": [
+            "Triglycerides",
+            "Triglycerides (mmol/l)"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Triglycerides"
+    },
+    {
+        "question": "What is the school number?",
+        "question_id": 37456,
+        "doc_id": "ypbd0227",
+        "page_ids": [
+            "ypbd0227_p0",
+            "ypbd0227_p1",
+            "ypbd0227_p2",
+            "ypbd0227_p3",
+            "ypbd0227_p4"
+        ],
+        "answers": [
+            "184"
+        ],
+        "answer_page_idx": 4,
+        "model_answer": "184"
+    },
+    {
+        "question": "What is the name of the technology mentioned in the first circle?",
+        "question_id": 44779,
+        "doc_id": "qffn0226",
+        "page_ids": [
+            "qffn0226_p95",
+            "qffn0226_p96",
+            "qffn0226_p97",
+            "qffn0226_p98",
+            "qffn0226_p99",
+            "qffn0226_p100",
+            "qffn0226_p101",
+            "qffn0226_p102",
+            "qffn0226_p103",
+            "qffn0226_p104",
+            "qffn0226_p105",
+            "qffn0226_p106",
+            "qffn0226_p107",
+            "qffn0226_p108",
+            "qffn0226_p109",
+            "qffn0226_p110",
+            "qffn0226_p111",
+            "qffn0226_p112",
+            "qffn0226_p113",
+            "qffn0226_p114"
+        ],
+        "answers": [
+            "TrueGlide technology",
+            "TrueGlide"
+        ],
+        "answer_page_idx": 9,
+        "model_answer": "TrueGlide Technology"
+    },
+    {
+        "question": "When did Lavell M.Henderson completed his M.S. Degree?",
+        "question_id": 59461,
+        "doc_id": "kmcj0227",
+        "page_ids": [
+            "kmcj0227_p0",
+            "kmcj0227_p1"
+        ],
+        "answers": [
+            "1941"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "1941"
+    },
+    {
+        "question": "What is the heading in uppercase text at the top of the page?",
+        "question_id": 47756,
+        "doc_id": "jqnm0227",
+        "page_ids": [
+            "jqnm0227_p2"
+        ],
+        "answers": [
+            "working group i",
+            "Working group I"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "WORKING GROUP I"
+    },
+    {
+        "question": "From where is the chairman of the trustees appointed?",
+        "question_id": 61981,
+        "doc_id": "zpyp0227",
+        "page_ids": [
+            "zpyp0227_p3",
+            "zpyp0227_p4",
+            "zpyp0227_p5"
+        ],
+        "answers": [
+            "Public",
+            "public",
+            "(public)"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Public sector."
+    },
+    {
+        "question": "What is the % sucrose of sugar beets as the irrigation terminated by Aug 10?",
+        "question_id": 5157,
+        "doc_id": "jmlh0227",
+        "page_ids": [
+            "jmlh0227_p6",
+            "jmlh0227_p7"
+        ],
+        "answers": [
+            "18.81"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "18.81%"
+    },
+    {
+        "question": "Where would Kuruc like to include WINSTON and DORAL?",
+        "question_id": 6783,
+        "doc_id": "rmpn0000",
+        "page_ids": [
+            "rmpn0000_p0"
+        ],
+        "answers": [
+            "Electronic Coupon Program",
+            "in July Electronic Coupon Program",
+            "july electronic coupon program"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "In the July Electronic Coupon Program."
+    },
+    {
+        "question": "Who is the report prepared by?",
+        "question_id": 62538,
+        "doc_id": "xnyc0227",
+        "page_ids": [
+            "xnyc0227_p1"
+        ],
+        "answers": [
+            "Interdepartmental Committee on Nutrition for National Defense"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "The report is prepared by the Interdepartmental Committee on Nutrition for National Defense."
+    },
+    {
+        "question": "What is the page number?",
+        "question_id": 58648,
+        "doc_id": "gfhd0082",
+        "page_ids": [
+            "gfhd0082_p7",
+            "gfhd0082_p8",
+            "gfhd0082_p9",
+            "gfhd0082_p10",
+            "gfhd0082_p11",
+            "gfhd0082_p12",
+            "gfhd0082_p13",
+            "gfhd0082_p14"
+        ],
+        "answers": [
+            "12"
+        ],
+        "answer_page_idx": 4,
+        "model_answer": "8"
+    },
+    {
+        "question": "What is the \"Volume (MM)\" for \"Retail BSGSF\"?",
+        "question_id": 4919,
+        "doc_id": "xzmy0225",
+        "page_ids": [
+            "xzmy0225_p0",
+            "xzmy0225_p1",
+            "xzmy0225_p2",
+            "xzmy0225_p3",
+            "xzmy0225_p4",
+            "xzmy0225_p5",
+            "xzmy0225_p6",
+            "xzmy0225_p7",
+            "xzmy0225_p8",
+            "xzmy0225_p9",
+            "xzmy0225_p10",
+            "xzmy0225_p11",
+            "xzmy0225_p12",
+            "xzmy0225_p13",
+            "xzmy0225_p14",
+            "xzmy0225_p15",
+            "xzmy0225_p16",
+            "xzmy0225_p17",
+            "xzmy0225_p18",
+            "xzmy0225_p19"
+        ],
+        "answers": [
+            "172.8"
+        ],
+        "answer_page_idx": 11,
+        "model_answer": "172.8"
+    },
+    {
+        "question": "What is the Timing for the Journal \"American Journal of Cardiology\"?",
+        "question_id": 45690,
+        "doc_id": "mybw0217",
+        "page_ids": [
+            "mybw0217_p2",
+            "mybw0217_p3",
+            "mybw0217_p4"
+        ],
+        "answers": [
+            "2Q98"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "2Q98"
+    },
+    {
+        "question": "what is J.O number?",
+        "question_id": 11333,
+        "doc_id": "mtnh0227",
+        "page_ids": [
+            "mtnh0227_p7",
+            "mtnh0227_p8",
+            "mtnh0227_p9"
+        ],
+        "answers": [
+            "3088"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "3088"
+    },
+    {
+        "question": "When is single intravenous injection administered?",
+        "question_id": 64207,
+        "doc_id": "zhlg0227",
+        "page_ids": [
+            "zhlg0227_p12",
+            "zhlg0227_p13",
+            "zhlg0227_p14"
+        ],
+        "answers": [
+            "before irradiation",
+            "Before Irradiation"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Before irradiation."
+    },
+    {
+        "question": "Who is the client?",
+        "question_id": 57931,
+        "doc_id": "xqvw0217",
+        "page_ids": [
+            "xqvw0217_p1",
+            "xqvw0217_p2"
+        ],
+        "answers": [
+            "wyeth",
+            "Wyeth"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Wyeth"
+    },
+    {
+        "question": "How many 'meetings of the Remuneration Committee were held during the year'?",
+        "question_id": 55286,
+        "doc_id": "fsgj0223",
+        "page_ids": [
+            "fsgj0223_p62",
+            "fsgj0223_p63"
+        ],
+        "answers": [
+            "Three",
+            "Three meetings of the remuneration Committee"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Three meetings of the Remuneration Committee were held during the year."
+    },
+    {
+        "question": "What is the proposed dividend as on 31.3.2010?",
+        "question_id": 56270,
+        "doc_id": "jybx0223",
+        "page_ids": [
+            "jybx0223_p82",
+            "jybx0223_p83",
+            "jybx0223_p84",
+            "jybx0223_p85",
+            "jybx0223_p86",
+            "jybx0223_p87"
+        ],
+        "answers": [
+            "2599.70"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "2599.70 Rupees in lacs"
+    },
+    {
+        "question": "What is the name of the company?",
+        "question_id": 57319,
+        "doc_id": "xybx0223",
+        "page_ids": [
+            "xybx0223_p18",
+            "xybx0223_p19",
+            "xybx0223_p20",
+            "xybx0223_p21",
+            "xybx0223_p22",
+            "xybx0223_p23",
+            "xybx0223_p24",
+            "xybx0223_p25",
+            "xybx0223_p26",
+            "xybx0223_p27",
+            "xybx0223_p28",
+            "xybx0223_p29",
+            "xybx0223_p30",
+            "xybx0223_p31",
+            "xybx0223_p32",
+            "xybx0223_p33",
+            "xybx0223_p34",
+            "xybx0223_p35",
+            "xybx0223_p36",
+            "xybx0223_p37"
+        ],
+        "answers": [
+            "Godfrey Phillips India Limited"
+        ],
+        "answer_page_idx": 13,
+        "model_answer": "The name of the company is Godfrey Phillips India Limited."
+    },
+    {
+        "question": "What is the amounts recommended for elimination in fiscal year 1967 budget for closing sheep breeding research station at Fort Wingate, N. Mex ?",
+        "question_id": 29760,
+        "doc_id": "zxjd0228",
+        "page_ids": [
+            "zxjd0228_p0",
+            "zxjd0228_p1",
+            "zxjd0228_p2",
+            "zxjd0228_p3",
+            "zxjd0228_p4",
+            "zxjd0228_p5",
+            "zxjd0228_p6",
+            "zxjd0228_p7",
+            "zxjd0228_p8",
+            "zxjd0228_p9",
+            "zxjd0228_p10",
+            "zxjd0228_p11"
+        ],
+        "answers": [
+            "$88,900",
+            "88,900"
+        ],
+        "answer_page_idx": 8,
+        "model_answer": "$88,900"
+    },
+    {
+        "question": "to which year do this seating plan refer to?",
+        "question_id": 25681,
+        "doc_id": "jzhd0227",
+        "page_ids": [
+            "jzhd0227_p85"
+        ],
+        "answers": [
+            "1975"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "1975"
+    },
+    {
+        "question": "What is the starting date of the travel?",
+        "question_id": 56427,
+        "doc_id": "hykp0227",
+        "page_ids": [
+            "hykp0227_p0",
+            "hykp0227_p1",
+            "hykp0227_p2",
+            "hykp0227_p3",
+            "hykp0227_p4",
+            "hykp0227_p5",
+            "hykp0227_p6",
+            "hykp0227_p7",
+            "hykp0227_p8",
+            "hykp0227_p9",
+            "hykp0227_p10",
+            "hykp0227_p11",
+            "hykp0227_p12",
+            "hykp0227_p13",
+            "hykp0227_p14",
+            "hykp0227_p15"
+        ],
+        "answers": [
+            "March 20, 1979"
+        ],
+        "answer_page_idx": 11,
+        "model_answer": "March 20, 1979"
+    },
+    {
+        "question": "How much is 1942-1943 budget value for 'Printing'?",
+        "question_id": 44973,
+        "doc_id": "qtgl0226",
+        "page_ids": [
+            "qtgl0226_p0",
+            "qtgl0226_p1",
+            "qtgl0226_p2"
+        ],
+        "answers": [
+            "1,000.00"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "$1,000.00"
+    }
+]

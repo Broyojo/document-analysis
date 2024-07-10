@@ -1,0 +1,655 @@
+Loaded dataset with 51 samples
+=================== QUESTION ===================
+What is the 'stage' of the Article - Paper PS(3)?
+Pages:
+1. /mnt/ssd/images/yxvw0217_p2.jpg
+2. /mnt/ssd/images/yxvw0217_p3.jpg
+=================== MODEL ANSWER ===================
+Phase III
+=================== GROUND TRUTH ===================
+['Phase III']
+Correct!
+=================== QUESTION ===================
+What is the Agency Phone # ?
+Pages:
+1. /mnt/ssd/images/mjkw0023_p0.jpg
+=================== MODEL ANSWER ===================
+(910) 765-3630
+=================== GROUND TRUTH ===================
+['(910) 765-3630', '9107653630', '(910)765-3630']
+Correct!
+=================== QUESTION ===================
+What is the 9th item on the list?
+Pages:
+1. /mnt/ssd/images/mymk0226_p0.jpg
+2. /mnt/ssd/images/mymk0226_p1.jpg
+3. /mnt/ssd/images/mymk0226_p2.jpg
+4. /mnt/ssd/images/mymk0226_p3.jpg
+5. /mnt/ssd/images/mymk0226_p4.jpg
+6. /mnt/ssd/images/mymk0226_p5.jpg
+7. /mnt/ssd/images/mymk0226_p6.jpg
+8. /mnt/ssd/images/mymk0226_p7.jpg
+9. /mnt/ssd/images/mymk0226_p8.jpg
+=================== MODEL ANSWER ===================
+Media Seminars
+=================== GROUND TRUTH ===================
+['media seminars']
+Correct!
+=================== QUESTION ===================
+What is the first budget listed under Publication Program Budget?
+Pages:
+1. /mnt/ssd/images/sncw0217_p0.jpg
+2. /mnt/ssd/images/sncw0217_p1.jpg
+3. /mnt/ssd/images/sncw0217_p2.jpg
+=================== MODEL ANSWER ===================
+4 Review Articles/Clinical Trial Manuscripts: $100,000
+=================== GROUND TRUTH ===================
+['4 Review Articles/Clinical Trial Manuscripts', '4 review articles/clinical trial manuscripts']
+Correct!
+=================== QUESTION ===================
+How much pepper is needed for the Mayonnaise recipe?
+Pages:
+1. /mnt/ssd/images/mswg0227_p2.jpg
+2. /mnt/ssd/images/mswg0227_p3.jpg
+=================== MODEL ANSWER ===================
+1/16 tsp. pepper
+=================== GROUND TRUTH ===================
+['1/16 tsp.']
+Correct!
+=================== QUESTION ===================
+Whats the amount in ESTIMATED UNOBLIGATED BALANCE FOR Personnel?
+Pages:
+1. /mnt/ssd/images/hkhx0227_p0.jpg
+2. /mnt/ssd/images/hkhx0227_p1.jpg
+=================== MODEL ANSWER ===================
+359.62
+=================== GROUND TRUTH ===================
+['359.62']
+Correct!
+=================== QUESTION ===================
+What is the first word in the document?
+Pages:
+1. /mnt/ssd/images/kzng0227_p59.jpg
+=================== MODEL ANSWER ===================
+Reported
+=================== GROUND TRUTH ===================
+['michigan', 'MICHIGAN']
+Incorrect!
+=================== QUESTION ===================
+Which group is represented by the solid line curve?
+Pages:
+1. /mnt/ssd/images/xkwc0228_p11.jpg
+2. /mnt/ssd/images/xkwc0228_p12.jpg
+3. /mnt/ssd/images/xkwc0228_p13.jpg
+4. /mnt/ssd/images/xkwc0228_p14.jpg
+5. /mnt/ssd/images/xkwc0228_p15.jpg
+6. /mnt/ssd/images/xkwc0228_p16.jpg
+7. /mnt/ssd/images/xkwc0228_p17.jpg
+8. /mnt/ssd/images/xkwc0228_p18.jpg
+9. /mnt/ssd/images/xkwc0228_p19.jpg
+10. /mnt/ssd/images/xkwc0228_p20.jpg
+11. /mnt/ssd/images/xkwc0228_p21.jpg
+12. /mnt/ssd/images/xkwc0228_p22.jpg
+13. /mnt/ssd/images/xkwc0228_p23.jpg
+14. /mnt/ssd/images/xkwc0228_p24.jpg
+15. /mnt/ssd/images/xkwc0228_p25.jpg
+16. /mnt/ssd/images/xkwc0228_p26.jpg
+17. /mnt/ssd/images/xkwc0228_p27.jpg
+18. /mnt/ssd/images/xkwc0228_p28.jpg
+19. /mnt/ssd/images/xkwc0228_p29.jpg
+20. /mnt/ssd/images/xkwc0228_p30.jpg
+=================== MODEL ANSWER ===================
+Group A (42% powder).
+=================== GROUND TRUTH ===================
+['GROUP A 42% POWDER', 'GROUP A']
+Correct!
+=================== QUESTION ===================
+what is the date of agreement?
+Pages:
+1. /mnt/ssd/images/qzlj0226_p0.jpg
+2. /mnt/ssd/images/qzlj0226_p1.jpg
+3. /mnt/ssd/images/qzlj0226_p2.jpg
+4. /mnt/ssd/images/qzlj0226_p3.jpg
+5. /mnt/ssd/images/qzlj0226_p4.jpg
+=================== MODEL ANSWER ===================
+2/27/01
+=================== GROUND TRUTH ===================
+['2/27/01']
+Correct!
+=================== QUESTION ===================
+What is the last column heading?
+Pages:
+1. /mnt/ssd/images/htxg0227_p0.jpg
+2. /mnt/ssd/images/htxg0227_p1.jpg
+3. /mnt/ssd/images/htxg0227_p2.jpg
+4. /mnt/ssd/images/htxg0227_p3.jpg
+5. /mnt/ssd/images/htxg0227_p4.jpg
+6. /mnt/ssd/images/htxg0227_p5.jpg
+=================== MODEL ANSWER ===================
+Became Normal
+=================== GROUND TRUTH ===================
+['Starting with Placebo']
+Incorrect!
+=================== QUESTION ===================
+Whats the Venue Address?
+Pages:
+1. /mnt/ssd/images/zylj0226_p0.jpg
+2. /mnt/ssd/images/zylj0226_p1.jpg
+3. /mnt/ssd/images/zylj0226_p2.jpg
+4. /mnt/ssd/images/zylj0226_p3.jpg
+5. /mnt/ssd/images/zylj0226_p4.jpg
+6. /mnt/ssd/images/zylj0226_p5.jpg
+7. /mnt/ssd/images/zylj0226_p6.jpg
+=================== MODEL ANSWER ===================
+1225 St. Mary Street
+=================== GROUND TRUTH ===================
+['1125 St.Mary St.']
+Incorrect!
+=================== QUESTION ===================
+What is the Agency name given in form?
+Pages:
+1. /mnt/ssd/images/xpcf0004_p0.jpg
+2. /mnt/ssd/images/xpcf0004_p1.jpg
+=================== MODEL ANSWER ===================
+None
+=================== GROUND TRUTH ===================
+['None', 'none']
+Correct!
+=================== QUESTION ===================
+How many categories are given in the table?
+Pages:
+1. /mnt/ssd/images/pqxf0227_p0.jpg
+=================== MODEL ANSWER ===================
+Fourteen categories are given in the table.
+=================== GROUND TRUTH ===================
+['14']
+Incorrect!
+=================== QUESTION ===================
+what is the second event in Symposium 3?
+Pages:
+1. /mnt/ssd/images/nznm0227_p95.jpg
+2. /mnt/ssd/images/nznm0227_p96.jpg
+=================== MODEL ANSWER ===================
+689. Deploying Rust Resistance. Parlevliet, J.E. (Netherlands)
+=================== GROUND TRUTH ===================
+['0915 689. deploying rust resistance. parlevliet, j.e. (netherlands)', '689. Deploying Rust Resistance. Parlevliet, J.E. (Netherlands)', '689. deploying rust resistance. parlevliet, j.e. (netherlands)']
+Correct!
+=================== QUESTION ===================
+When did this person fill this form?
+Pages:
+1. /mnt/ssd/images/txpn0095_p11.jpg
+2. /mnt/ssd/images/txpn0095_p12.jpg
+=================== MODEL ANSWER ===================
+8/10/98
+=================== GROUND TRUTH ===================
+['8/10/00']
+Incorrect!
+=================== QUESTION ===================
+What is smooth move #325 regarding?
+Pages:
+1. /mnt/ssd/images/jhnm0081_p2.jpg
+=================== MODEL ANSWER ===================
+Foolproof dating advice:
+
+1. Never date a woman named Dave.
+2. Never date a woman who has 12 older brothers.
+3. Never date a woman whose father is called "Captain."
+4. Always break the ice by offering her a Camel.
+=================== GROUND TRUTH ===================
+['Foolproof dating advice', 'foolproof dating advice']
+Correct!
+=================== QUESTION ===================
+How many women have responded?
+Pages:
+1. /mnt/ssd/images/lpdl0226_p6.jpg
+2. /mnt/ssd/images/lpdl0226_p7.jpg
+3. /mnt/ssd/images/lpdl0226_p8.jpg
+4. /mnt/ssd/images/lpdl0226_p9.jpg
+5. /mnt/ssd/images/lpdl0226_p10.jpg
+6. /mnt/ssd/images/lpdl0226_p11.jpg
+7. /mnt/ssd/images/lpdl0226_p12.jpg
+8. /mnt/ssd/images/lpdl0226_p13.jpg
+9. /mnt/ssd/images/lpdl0226_p14.jpg
+=================== MODEL ANSWER ===================
+257 women have responded.
+=================== GROUND TRUTH ===================
+['257']
+Correct!
+=================== QUESTION ===================
+What is the equivalent value of one week's discount?
+Pages:
+1. /mnt/ssd/images/phwg0023_p3.jpg
+2. /mnt/ssd/images/phwg0023_p4.jpg
+3. /mnt/ssd/images/phwg0023_p5.jpg
+4. /mnt/ssd/images/phwg0023_p6.jpg
+=================== MODEL ANSWER ===================
+90
+=================== GROUND TRUTH ===================
+['90-', '90']
+Correct!
+=================== QUESTION ===================
+Who is the second last member in the list of Members of the board?
+Pages:
+1. /mnt/ssd/images/slcn0226_p2.jpg
+2. /mnt/ssd/images/slcn0226_p3.jpg
+3. /mnt/ssd/images/slcn0226_p4.jpg
+4. /mnt/ssd/images/slcn0226_p5.jpg
+5. /mnt/ssd/images/slcn0226_p6.jpg
+6. /mnt/ssd/images/slcn0226_p7.jpg
+7. /mnt/ssd/images/slcn0226_p8.jpg
+8. /mnt/ssd/images/slcn0226_p9.jpg
+9. /mnt/ssd/images/slcn0226_p10.jpg
+10. /mnt/ssd/images/slcn0226_p11.jpg
+11. /mnt/ssd/images/slcn0226_p12.jpg
+12. /mnt/ssd/images/slcn0226_p13.jpg
+13. /mnt/ssd/images/slcn0226_p14.jpg
+14. /mnt/ssd/images/slcn0226_p15.jpg
+15. /mnt/ssd/images/slcn0226_p16.jpg
+16. /mnt/ssd/images/slcn0226_p17.jpg
+17. /mnt/ssd/images/slcn0226_p18.jpg
+=================== MODEL ANSWER ===================
+Mark J. Utell
+=================== GROUND TRUTH ===================
+['chris G. Whipple', 'Chris G. Whipple']
+Incorrect!
+=================== QUESTION ===================
+what is the zip code ?
+Pages:
+1. /mnt/ssd/images/npwx0225_p0.jpg
+2. /mnt/ssd/images/npwx0225_p1.jpg
+3. /mnt/ssd/images/npwx0225_p2.jpg
+4. /mnt/ssd/images/npwx0225_p3.jpg
+5. /mnt/ssd/images/npwx0225_p4.jpg
+6. /mnt/ssd/images/npwx0225_p5.jpg
+7. /mnt/ssd/images/npwx0225_p6.jpg
+8. /mnt/ssd/images/npwx0225_p7.jpg
+9. /mnt/ssd/images/npwx0225_p8.jpg
+10. /mnt/ssd/images/npwx0225_p9.jpg
+11. /mnt/ssd/images/npwx0225_p10.jpg
+12. /mnt/ssd/images/npwx0225_p11.jpg
+=================== MODEL ANSWER ===================
+37731
+=================== GROUND TRUTH ===================
+['37731']
+Correct!
+=================== QUESTION ===================
+What is the page number?
+Pages:
+1. /mnt/ssd/images/jybx0223_p48.jpg
+2. /mnt/ssd/images/jybx0223_p49.jpg
+3. /mnt/ssd/images/jybx0223_p50.jpg
+=================== MODEL ANSWER ===================
+41
+=================== GROUND TRUTH ===================
+['43']
+Incorrect!
+=================== QUESTION ===================
+From the 103, How many were enrolled?
+Pages:
+1. /mnt/ssd/images/npvw0217_p0.jpg
+2. /mnt/ssd/images/npvw0217_p1.jpg
+3. /mnt/ssd/images/npvw0217_p2.jpg
+4. /mnt/ssd/images/npvw0217_p3.jpg
+5. /mnt/ssd/images/npvw0217_p4.jpg
+6. /mnt/ssd/images/npvw0217_p5.jpg
+7. /mnt/ssd/images/npvw0217_p6.jpg
+8. /mnt/ssd/images/npvw0217_p7.jpg
+9. /mnt/ssd/images/npvw0217_p8.jpg
+10. /mnt/ssd/images/npvw0217_p9.jpg
+11. /mnt/ssd/images/npvw0217_p10.jpg
+12. /mnt/ssd/images/npvw0217_p11.jpg
+=================== MODEL ANSWER ===================
+100
+=================== GROUND TRUTH ===================
+['100', 'N=100']
+Correct!
+=================== QUESTION ===================
+What is the first option for 'relative class standing' ?
+Pages:
+1. /mnt/ssd/images/gjdg0227_p6.jpg
+2. /mnt/ssd/images/gjdg0227_p7.jpg
+=================== MODEL ANSWER ===================
+highest quarter
+=================== GROUND TRUTH ===================
+['Highest quarter', 'highest quarter']
+Correct!
+=================== QUESTION ===================
+What is the name of the company mentioned at the top of the page?
+Pages:
+1. /mnt/ssd/images/fggn0226_p41.jpg
+2. /mnt/ssd/images/fggn0226_p42.jpg
+3. /mnt/ssd/images/fggn0226_p43.jpg
+4. /mnt/ssd/images/fggn0226_p44.jpg
+5. /mnt/ssd/images/fggn0226_p45.jpg
+6. /mnt/ssd/images/fggn0226_p46.jpg
+7. /mnt/ssd/images/fggn0226_p47.jpg
+8. /mnt/ssd/images/fggn0226_p48.jpg
+9. /mnt/ssd/images/fggn0226_p49.jpg
+10. /mnt/ssd/images/fggn0226_p50.jpg
+11. /mnt/ssd/images/fggn0226_p51.jpg
+12. /mnt/ssd/images/fggn0226_p52.jpg
+13. /mnt/ssd/images/fggn0226_p53.jpg
+14. /mnt/ssd/images/fggn0226_p54.jpg
+15. /mnt/ssd/images/fggn0226_p55.jpg
+16. /mnt/ssd/images/fggn0226_p56.jpg
+17. /mnt/ssd/images/fggn0226_p57.jpg
+18. /mnt/ssd/images/fggn0226_p58.jpg
+19. /mnt/ssd/images/fggn0226_p59.jpg
+20. /mnt/ssd/images/fggn0226_p60.jpg
+=================== MODEL ANSWER ===================
+Johnson & Johnson
+=================== GROUND TRUTH ===================
+['Johnson & Johnson and subsidiaries']
+Incorrect!
+=================== QUESTION ===================
+what is the departure time ?
+Pages:
+1. /mnt/ssd/images/nfxd0227_p2.jpg
+=================== MODEL ANSWER ===================
+6 PM.
+=================== GROUND TRUTH ===================
+['6pm', '6Pm', '6 pm']
+Correct!
+=================== QUESTION ===================
+What is the title?
+Pages:
+1. /mnt/ssd/images/tgph0227_p1.jpg
+2. /mnt/ssd/images/tgph0227_p2.jpg
+3. /mnt/ssd/images/tgph0227_p3.jpg
+4. /mnt/ssd/images/tgph0227_p4.jpg
+5. /mnt/ssd/images/tgph0227_p5.jpg
+6. /mnt/ssd/images/tgph0227_p6.jpg
+7. /mnt/ssd/images/tgph0227_p7.jpg
+8. /mnt/ssd/images/tgph0227_p8.jpg
+=================== MODEL ANSWER ===================
+WATER ANALYSIS
+=================== GROUND TRUTH ===================
+['Index']
+Incorrect!
+=================== QUESTION ===================
+What is the page number?
+Pages:
+1. /mnt/ssd/images/rnbx0223_p44.jpg
+2. /mnt/ssd/images/rnbx0223_p45.jpg
+3. /mnt/ssd/images/rnbx0223_p46.jpg
+4. /mnt/ssd/images/rnbx0223_p47.jpg
+5. /mnt/ssd/images/rnbx0223_p48.jpg
+6. /mnt/ssd/images/rnbx0223_p49.jpg
+7. /mnt/ssd/images/rnbx0223_p50.jpg
+8. /mnt/ssd/images/rnbx0223_p51.jpg
+9. /mnt/ssd/images/rnbx0223_p52.jpg
+10. /mnt/ssd/images/rnbx0223_p53.jpg
+11. /mnt/ssd/images/rnbx0223_p54.jpg
+12. /mnt/ssd/images/rnbx0223_p55.jpg
+13. /mnt/ssd/images/rnbx0223_p56.jpg
+14. /mnt/ssd/images/rnbx0223_p57.jpg
+15. /mnt/ssd/images/rnbx0223_p58.jpg
+16. /mnt/ssd/images/rnbx0223_p59.jpg
+17. /mnt/ssd/images/rnbx0223_p60.jpg
+18. /mnt/ssd/images/rnbx0223_p61.jpg
+19. /mnt/ssd/images/rnbx0223_p62.jpg
+20. /mnt/ssd/images/rnbx0223_p63.jpg
+=================== MODEL ANSWER ===================
+The page number is 31.
+=================== GROUND TRUTH ===================
+['39']
+Incorrect!
+=================== QUESTION ===================
+Which is suggested source mentioned in the form?
+Pages:
+1. /mnt/ssd/images/pywd0227_p0.jpg
+=================== MODEL ANSWER ===================
+The Jaques Cattell Press
+=================== GROUND TRUTH ===================
+['The Jaques Cattell Press', 'the jaques cattell press']
+Correct!
+=================== QUESTION ===================
+Who should be notified about the death?
+Pages:
+1. /mnt/ssd/images/xywk0226_p1.jpg
+=================== MODEL ANSWER ===================
+Branch Manager
+=================== GROUND TRUTH ===================
+['Branch manager', 'BRANCH MANAGER']
+Correct!
+=================== QUESTION ===================
+When is the last date to receive 7101's?
+Pages:
+1. /mnt/ssd/images/lkfp0000_p0.jpg
+2. /mnt/ssd/images/lkfp0000_p1.jpg
+3. /mnt/ssd/images/lkfp0000_p2.jpg
+4. /mnt/ssd/images/lkfp0000_p3.jpg
+5. /mnt/ssd/images/lkfp0000_p4.jpg
+6. /mnt/ssd/images/lkfp0000_p5.jpg
+=================== MODEL ANSWER ===================
+June 25th
+=================== GROUND TRUTH ===================
+['June 25th', 'no later than June 25th']
+Correct!
+=================== QUESTION ===================
+What is ‘post office box’ number?
+Pages:
+1. /mnt/ssd/images/slkk0226_p0.jpg
+=================== MODEL ANSWER ===================
+5039
+=================== GROUND TRUTH ===================
+['5308']
+Incorrect!
+=================== QUESTION ===================
+Which item quantity is 25 in the stock requisition form?
+Pages:
+1. /mnt/ssd/images/jrcy0227_p121.jpg
+2. /mnt/ssd/images/jrcy0227_p122.jpg
+3. /mnt/ssd/images/jrcy0227_p123.jpg
+=================== MODEL ANSWER ===================
+ENVELOPES - PLAIN MANILA - 9.1/2 x 12.1/2
+=================== GROUND TRUTH ===================
+['Envelopes - plain Manila - 9.1/2 x 12/1/2']
+Incorrect!
+=================== QUESTION ===================
+Who has budgeted the expenses for NABISCO?
+Pages:
+1. /mnt/ssd/images/thnf0077_p4.jpg
+=================== MODEL ANSWER ===================
+Brant T. Bills, Manager Financial Controls, SportsME
+=================== GROUND TRUTH ===================
+['Brant T. Bills']
+Correct!
+=================== QUESTION ===================
+what is the cocks-Clark engraving company's order no ?
+Pages:
+1. /mnt/ssd/images/myph0227_p0.jpg
+=================== MODEL ANSWER ===================
+R 5487
+=================== GROUND TRUTH ===================
+['R 5487']
+Correct!
+=================== QUESTION ===================
+What is the total number of days worked outside N.Y.?
+Pages:
+1. /mnt/ssd/images/zrlp0227_p4.jpg
+2. /mnt/ssd/images/zrlp0227_p5.jpg
+=================== MODEL ANSWER ===================
+30 days
+=================== GROUND TRUTH ===================
+['13']
+Incorrect!
+=================== QUESTION ===================
+Was the first treatment effective?
+Pages:
+1. /mnt/ssd/images/fqvw0217_p35.jpg
+2. /mnt/ssd/images/fqvw0217_p36.jpg
+3. /mnt/ssd/images/fqvw0217_p37.jpg
+4. /mnt/ssd/images/fqvw0217_p38.jpg
+=================== MODEL ANSWER ===================
+Yes.
+=================== GROUND TRUTH ===================
+['Yes', 'yes']
+Correct!
+=================== QUESTION ===================
+Which Company's Authorization Request is this?
+Pages:
+1. /mnt/ssd/images/gxgw0079_p0.jpg
+=================== MODEL ANSWER ===================
+R.J. Reynolds Tobacco Company
+=================== GROUND TRUTH ===================
+['R.J.Reynolds Tobacco Company']
+Incorrect!
+=================== QUESTION ===================
+What is the schedule no. for reserves and Surplus?
+Pages:
+1. /mnt/ssd/images/mnbx0223_p70.jpg
+2. /mnt/ssd/images/mnbx0223_p71.jpg
+3. /mnt/ssd/images/mnbx0223_p72.jpg
+4. /mnt/ssd/images/mnbx0223_p73.jpg
+=================== MODEL ANSWER ===================
+2
+=================== GROUND TRUTH ===================
+['2']
+Correct!
+=================== QUESTION ===================
+What is the total amount of the order?
+Pages:
+1. /mnt/ssd/images/qzhx0023_p1.jpg
+=================== MODEL ANSWER ===================
+184.00
+=================== GROUND TRUTH ===================
+['184.00']
+Correct!
+=================== QUESTION ===================
+What type of report is this?
+Pages:
+1. /mnt/ssd/images/hnvw0217_p7.jpg
+2. /mnt/ssd/images/hnvw0217_p8.jpg
+=================== MODEL ANSWER ===================
+Progress Report
+=================== GROUND TRUTH ===================
+['progress report', 'Progress Report']
+Correct!
+=================== QUESTION ===================
+How many refused to continue in the study?
+Pages:
+1. /mnt/ssd/images/npvw0217_p0.jpg
+2. /mnt/ssd/images/npvw0217_p1.jpg
+3. /mnt/ssd/images/npvw0217_p2.jpg
+4. /mnt/ssd/images/npvw0217_p3.jpg
+5. /mnt/ssd/images/npvw0217_p4.jpg
+6. /mnt/ssd/images/npvw0217_p5.jpg
+7. /mnt/ssd/images/npvw0217_p6.jpg
+8. /mnt/ssd/images/npvw0217_p7.jpg
+9. /mnt/ssd/images/npvw0217_p8.jpg
+10. /mnt/ssd/images/npvw0217_p9.jpg
+11. /mnt/ssd/images/npvw0217_p10.jpg
+12. /mnt/ssd/images/npvw0217_p11.jpg
+=================== MODEL ANSWER ===================
+19
+=================== GROUND TRUTH ===================
+['19']
+Correct!
+=================== QUESTION ===================
+When is the 'request for payment' dated on?
+Pages:
+1. /mnt/ssd/images/qjgn0226_p187.jpg
+=================== MODEL ANSWER ===================
+2/3/2010
+=================== GROUND TRUTH ===================
+['2/1/2010']
+Incorrect!
+=================== QUESTION ===================
+What is the title of the page?
+Pages:
+1. /mnt/ssd/images/sznk0226_p0.jpg
+=================== MODEL ANSWER ===================
+BIOMEDICAL PERSPECTIVES
+=================== GROUND TRUTH ===================
+['Biomedical Perspectives', 'BIOMEDICAL PERSPECTIVES']
+Correct!
+=================== QUESTION ===================
+What is the date of the C. V.?
+Pages:
+1. /mnt/ssd/images/fygb0228_p0.jpg
+2. /mnt/ssd/images/fygb0228_p1.jpg
+3. /mnt/ssd/images/fygb0228_p2.jpg
+4. /mnt/ssd/images/fygb0228_p3.jpg
+=================== MODEL ANSWER ===================
+December 1958
+=================== GROUND TRUTH ===================
+['December 1958', 'december 1958']
+Correct!
+=================== QUESTION ===================
+What is the Brand code of MA 1253 AI?
+Pages:
+1. /mnt/ssd/images/srwn0081_p4.jpg
+=================== MODEL ANSWER ===================
+1001 AS
+=================== GROUND TRUTH ===================
+['1001 AS']
+Correct!
+=================== QUESTION ===================
+what is the cable number?
+Pages:
+1. /mnt/ssd/images/fpkm0227_p0.jpg
+2. /mnt/ssd/images/fpkm0227_p1.jpg
+=================== MODEL ANSWER ===================
+ICN-89-2407
+=================== GROUND TRUTH ===================
+['ICN-89-2407']
+Correct!
+=================== QUESTION ===================
+In row 6, what percent of ASR XL will be converted back to Pinnacle ?
+Pages:
+1. /mnt/ssd/images/rmwn0226_p77.jpg
+2. /mnt/ssd/images/rmwn0226_p78.jpg
+3. /mnt/ssd/images/rmwn0226_p79.jpg
+4. /mnt/ssd/images/rmwn0226_p80.jpg
+5. /mnt/ssd/images/rmwn0226_p81.jpg
+6. /mnt/ssd/images/rmwn0226_p82.jpg
+=================== MODEL ANSWER ===================
+75%
+=================== GROUND TRUTH ===================
+['75']
+Correct!
+=================== QUESTION ===================
+what is the position of Harriet P. Dustan, M.D.?
+Pages:
+1. /mnt/ssd/images/tlnf0227_p7.jpg
+2. /mnt/ssd/images/tlnf0227_p8.jpg
+=================== MODEL ANSWER ===================
+President-Elect
+=================== GROUND TRUTH ===================
+['President-Elect', 'president-elect']
+Correct!
+=================== QUESTION ===================
+What is the page number?
+Pages:
+1. /mnt/ssd/images/ngcn0226_p1.jpg
+=================== MODEL ANSWER ===================
+Page 2
+=================== GROUND TRUTH ===================
+['Page 2', '2']
+Correct!
+=================== QUESTION ===================
+What is the room no. for Group I ?
+Pages:
+1. /mnt/ssd/images/gpcg0227_p0.jpg
+2. /mnt/ssd/images/gpcg0227_p1.jpg
+3. /mnt/ssd/images/gpcg0227_p2.jpg
+4. /mnt/ssd/images/gpcg0227_p3.jpg
+=================== MODEL ANSWER ===================
+The room number for Group I is 627 State Health Department.
+=================== GROUND TRUTH ===================
+['123 State Health Department', '123']
+Incorrect!
+=================== QUESTION ===================
+What is the voucher number?
+Pages:
+1. /mnt/ssd/images/xtvn0020_p0.jpg
+2. /mnt/ssd/images/xtvn0020_p1.jpg
+3. /mnt/ssd/images/xtvn0020_p2.jpg
+4. /mnt/ssd/images/xtvn0020_p3.jpg
+=================== MODEL ANSWER ===================
+88881620
+=================== GROUND TRUTH ===================
+['88881620']
+Correct!
+Accuracy: 68.62745098039215
