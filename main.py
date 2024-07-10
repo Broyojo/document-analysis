@@ -7,7 +7,7 @@ from openai import OpenAI
 from tqdm import tqdm
 from calc_ci import wilson_score_interval
 
-SEED = 69420
+SEED = 42069
 
 random.seed(SEED)
 
@@ -35,7 +35,7 @@ def load_dataset(path, sample_ratio=0.01, k=None):
 
 
 # TODO: need about 400 samples for 95% confidence interval with 5% margin of error
-dataset = load_dataset("./dataset/mp-docvqa/val.json", k=400)
+dataset = load_dataset("./dataset/mp-docvqa/val.json", k=50)
 print("Loaded dataset with", len(dataset), "samples")
 
 
@@ -64,7 +64,7 @@ try:
         prompt = [
             {
                 "role": "system",
-                "content": "You are an assistant which extracts information from documents. Output the final answer with no other extraneous text.",  # TODO: experiment with better prompt structure (https://arxiv.org/pdf/2312.16171)
+                "content": "You are an assistant which extracts information from documents. Output the final answer with no other extraneous text.",  # TODO: experiment with better prompt structure (https://arxiv.org/pdf/2312.16171). maybe add <thinking></thinking> tokens?
             },
             {
                 "role": "user",

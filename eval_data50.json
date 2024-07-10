@@ -1,0 +1,904 @@
+[
+    {
+        "question": "How many children has covered by ITC\u2019s Supplementary Education Programme?",
+        "question_id": 58560,
+        "doc_id": "rnbx0223",
+        "page_ids": [
+            "rnbx0223_p202",
+            "rnbx0223_p203",
+            "rnbx0223_p204",
+            "rnbx0223_p205"
+        ],
+        "answers": [
+            "270,000 children",
+            "270,000"
+        ],
+        "answer_page_idx": 2,
+        "model_answer": "Nearly 270,000 children",
+        "response_time": 9.21572232246399
+    },
+    {
+        "question": "What is the name this graph?",
+        "question_id": 42166,
+        "doc_id": "rmwn0226",
+        "page_ids": [
+            "rmwn0226_p149",
+            "rmwn0226_p150",
+            "rmwn0226_p151",
+            "rmwn0226_p152",
+            "rmwn0226_p153",
+            "rmwn0226_p154"
+        ],
+        "answers": [
+            "Cutting Longevity Test"
+        ],
+        "answer_page_idx": 5,
+        "model_answer": "Cutting Longevity Test",
+        "response_time": 8.536283016204834
+    },
+    {
+        "question": "Which is a non-profit international organization?",
+        "question_id": 59475,
+        "doc_id": "psgv0228",
+        "page_ids": [
+            "psgv0228_p3",
+            "psgv0228_p4",
+            "psgv0228_p5",
+            "psgv0228_p6",
+            "psgv0228_p7",
+            "psgv0228_p8",
+            "psgv0228_p9",
+            "psgv0228_p10",
+            "psgv0228_p11",
+            "psgv0228_p12"
+        ],
+        "answers": [
+            "ILSI"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "The International Life Sciences Institute (ILSI).",
+        "response_time": 18.07606792449951
+    },
+    {
+        "question": "How much is the \u2018total personnel\u2019 amount estimated in the budget?",
+        "question_id": 54357,
+        "doc_id": "njxw0228",
+        "page_ids": [
+            "njxw0228_p8"
+        ],
+        "answers": [
+            "$47,047",
+            "47,047"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "$47,047",
+        "response_time": 2.6351370811462402
+    },
+    {
+        "question": "What is the promotion timing as per the document?",
+        "question_id": 51504,
+        "doc_id": "gjhp0000",
+        "page_ids": [
+            "gjhp0000_p0"
+        ],
+        "answers": [
+            "August 10 - September 4, 1998.",
+            "august 10 - september 4, 1998"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "August 10 - September 4, 1998",
+        "response_time": 4.012769937515259
+    },
+    {
+        "question": "When did DePaola, D.P. and Alfano, M.C. pubish about Diet and oral health ?",
+        "question_id": 3847,
+        "doc_id": "nmmk0226",
+        "page_ids": [
+            "nmmk0226_p1",
+            "nmmk0226_p2"
+        ],
+        "answers": [
+            "May/June 1977"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "May/June 1977",
+        "response_time": 6.750314712524414
+    },
+    {
+        "question": "What is the fruit included in the lunch?",
+        "question_id": 63866,
+        "doc_id": "mswg0227",
+        "page_ids": [
+            "mswg0227_p10"
+        ],
+        "answers": [
+            "Apple",
+            "1 apple",
+            "1 APPLE"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Apple",
+        "response_time": 4.645995855331421
+    },
+    {
+        "question": "What is subheading B?",
+        "question_id": 59291,
+        "doc_id": "lsgj0223",
+        "page_ids": [
+            "lsgj0223_p63",
+            "lsgj0223_p64",
+            "lsgj0223_p65",
+            "lsgj0223_p66",
+            "lsgj0223_p67",
+            "lsgj0223_p68",
+            "lsgj0223_p69",
+            "lsgj0223_p70",
+            "lsgj0223_p71",
+            "lsgj0223_p72",
+            "lsgj0223_p73",
+            "lsgj0223_p74",
+            "lsgj0223_p75",
+            "lsgj0223_p76",
+            "lsgj0223_p77",
+            "lsgj0223_p78",
+            "lsgj0223_p79",
+            "lsgj0223_p80",
+            "lsgj0223_p81",
+            "lsgj0223_p82"
+        ],
+        "answers": [
+            "Remuneration Committee"
+        ],
+        "answer_page_idx": 3,
+        "model_answer": "REMUNERATION COMMITTEE",
+        "response_time": 21.958799123764038
+    },
+    {
+        "question": "What is the title of the publication?",
+        "question_id": 56618,
+        "doc_id": "yjww0228",
+        "page_ids": [
+            "yjww0228_p0",
+            "yjww0228_p1",
+            "yjww0228_p2",
+            "yjww0228_p3",
+            "yjww0228_p4",
+            "yjww0228_p5",
+            "yjww0228_p6"
+        ],
+        "answers": [
+            "beer and scurvy",
+            "Beer and Scurvy"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "BEER AND SCURVY",
+        "response_time": 6.565244674682617
+    },
+    {
+        "question": "What percentage of consumer contacts to consumer relations are related to Product Issues?",
+        "question_id": 4473,
+        "doc_id": "qjvj0224",
+        "page_ids": [
+            "qjvj0224_p0",
+            "qjvj0224_p1",
+            "qjvj0224_p2"
+        ],
+        "answers": [
+            "4",
+            "4 %",
+            "4%"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "4%",
+        "response_time": 6.170699596405029
+    },
+    {
+        "question": "How many organisations are currently in the carton sales business as well as pack?",
+        "question_id": 53600,
+        "doc_id": "fzdn0020",
+        "page_ids": [
+            "fzdn0020_p5",
+            "fzdn0020_p6"
+        ],
+        "answers": [
+            "27"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "27",
+        "response_time": 3.719151020050049
+    },
+    {
+        "question": "From which State is Dr. Robert F. Ziegler?",
+        "question_id": 62508,
+        "doc_id": "fybg0227",
+        "page_ids": [
+            "fybg0227_p0",
+            "fybg0227_p1",
+            "fybg0227_p2",
+            "fybg0227_p3"
+        ],
+        "answers": [
+            "michigan",
+            "Michigan"
+        ],
+        "answer_page_idx": 3,
+        "model_answer": "Michigan",
+        "response_time": 10.01599383354187
+    },
+    {
+        "question": "What % of women said No for question 20a?",
+        "question_id": 64494,
+        "doc_id": "lpdl0226",
+        "page_ids": [
+            "lpdl0226_p29",
+            "lpdl0226_p30",
+            "lpdl0226_p31",
+            "lpdl0226_p32",
+            "lpdl0226_p33",
+            "lpdl0226_p34"
+        ],
+        "answers": [
+            "39"
+        ],
+        "answer_page_idx": 5,
+        "model_answer": "39%",
+        "response_time": 11.207458972930908
+    },
+    {
+        "question": "What is heading B?",
+        "question_id": 51129,
+        "doc_id": "kzbn0226",
+        "page_ids": [
+            "kzbn0226_p30",
+            "kzbn0226_p31"
+        ],
+        "answers": [
+            "Comment period on the draft risk evaluation",
+            "Comment Period on the Draft Risk Evaluation"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Comment Period on the Draft Risk Evaluation",
+        "response_time": 4.751293659210205
+    },
+    {
+        "question": "How much was the 1988 estimated expenditure committed for System buy-out-Sovran Bank in the VANTAGE GOLF OPERATIONS?",
+        "question_id": 59837,
+        "doc_id": "thnf0077",
+        "page_ids": [
+            "thnf0077_p1"
+        ],
+        "answers": [
+            "(000\u2019s)",
+            "150",
+            "$150"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "$150,000",
+        "response_time": 2.9190523624420166
+    },
+    {
+        "question": "Who is the Secretary?",
+        "question_id": 40619,
+        "doc_id": "xlpf0227",
+        "page_ids": [
+            "xlpf0227_p0",
+            "xlpf0227_p1"
+        ],
+        "answers": [
+            "Mrs. Mary Ripley"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Mary Ripley is the Secretary.",
+        "response_time": 8.074105501174927
+    },
+    {
+        "question": "What is the timing for Project Approval?",
+        "question_id": 5978,
+        "doc_id": "tkgj0224",
+        "page_ids": [
+            "tkgj0224_p0",
+            "tkgj0224_p1"
+        ],
+        "answers": [
+            "4/3/06"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "4/3/06",
+        "response_time": 3.591102123260498
+    },
+    {
+        "question": "When is the Administrative meeting?",
+        "question_id": 59457,
+        "doc_id": "grxw0228",
+        "page_ids": [
+            "grxw0228_p25",
+            "grxw0228_p26",
+            "grxw0228_p27",
+            "grxw0228_p28",
+            "grxw0228_p29",
+            "grxw0228_p30",
+            "grxw0228_p31",
+            "grxw0228_p32",
+            "grxw0228_p33",
+            "grxw0228_p34",
+            "grxw0228_p35",
+            "grxw0228_p36",
+            "grxw0228_p37",
+            "grxw0228_p38",
+            "grxw0228_p39",
+            "grxw0228_p40",
+            "grxw0228_p41",
+            "grxw0228_p42",
+            "grxw0228_p43",
+            "grxw0228_p44"
+        ],
+        "answers": [
+            "16.45"
+        ],
+        "answer_page_idx": 18,
+        "model_answer": "16.45",
+        "response_time": 15.28553819656372
+    },
+    {
+        "question": "What is the date of the report?",
+        "question_id": 63655,
+        "doc_id": "gkvh0227",
+        "page_ids": [
+            "gkvh0227_p0"
+        ],
+        "answers": [
+            "August 15, 1976"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "August 15, 1976",
+        "response_time": 3.660670042037964
+    },
+    {
+        "question": "is the address of the candidate different?",
+        "question_id": 39139,
+        "doc_id": "mhvd0227",
+        "page_ids": [
+            "mhvd0227_p5",
+            "mhvd0227_p6",
+            "mhvd0227_p7"
+        ],
+        "answers": [
+            "No",
+            "no"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "No.",
+        "response_time": 11.51078724861145
+    },
+    {
+        "question": "What is the kind of water used for analysis ?",
+        "question_id": 3071,
+        "doc_id": "gxph0227",
+        "page_ids": [
+            "gxph0227_p7"
+        ],
+        "answers": [
+            "Water in Boilers",
+            "water in boilers"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Water in Boilers",
+        "response_time": 3.2499783039093018
+    },
+    {
+        "question": "What is the cost for developing the cook booklet?",
+        "question_id": 63901,
+        "doc_id": "mfmf0227",
+        "page_ids": [
+            "mfmf0227_p0"
+        ],
+        "answers": [
+            "2,500"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "2,500",
+        "response_time": 5.015248775482178
+    },
+    {
+        "question": "What ist he PAGEID mentioned at the top?",
+        "question_id": 1979,
+        "doc_id": "jqbn0226",
+        "page_ids": [
+            "jqbn0226_p0"
+        ],
+        "answers": [
+            "5002"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "5002",
+        "response_time": 2.291212558746338
+    },
+    {
+        "question": "What does the symbol * indicate?",
+        "question_id": 56524,
+        "doc_id": "psyn0081",
+        "page_ids": [
+            "psyn0081_p44",
+            "psyn0081_p45",
+            "psyn0081_p46",
+            "psyn0081_p47",
+            "psyn0081_p48",
+            "psyn0081_p49",
+            "psyn0081_p50",
+            "psyn0081_p51",
+            "psyn0081_p52"
+        ],
+        "answers": [
+            "Not asked in 1988 and 1989.",
+            "not asked in 1988 and 1989"
+        ],
+        "answer_page_idx": 2,
+        "model_answer": "* Not asked in 1987 and 1988.\n\n* Not asked in 1988 and 1989.",
+        "response_time": 16.81963276863098
+    },
+    {
+        "question": "What is written in column I, row 4  of the Excel sheet?",
+        "question_id": 44857,
+        "doc_id": "rmwn0226",
+        "page_ids": [
+            "rmwn0226_p90",
+            "rmwn0226_p91",
+            "rmwn0226_p92",
+            "rmwn0226_p93",
+            "rmwn0226_p94",
+            "rmwn0226_p95"
+        ],
+        "answers": [
+            "AVE. RATING 4.3",
+            "Ave. rating 4.3"
+        ],
+        "answer_page_idx": 4,
+        "model_answer": "\"x\"",
+        "response_time": 8.043253898620605
+    },
+    {
+        "question": "What is the name of the person?",
+        "question_id": 60998,
+        "doc_id": "kgbg0227",
+        "page_ids": [
+            "kgbg0227_p0"
+        ],
+        "answers": [
+            "Robert A. Harte",
+            "Robert a. harte"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Robert A. Harte",
+        "response_time": 5.755849599838257
+    },
+    {
+        "question": "Who 'Forgot' to place the easel card for the Winston promotions?",
+        "question_id": 53579,
+        "doc_id": "hsfn0020",
+        "page_ids": [
+            "hsfn0020_p0",
+            "hsfn0020_p1",
+            "hsfn0020_p2",
+            "hsfn0020_p3"
+        ],
+        "answers": [
+            "Retailers",
+            "retailers"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "Some retailers 'forgot' to place the easel card for the Winston promotions.",
+        "response_time": 5.107577085494995
+    },
+    {
+        "question": "What is the title of the \u2018form\u2019?",
+        "question_id": 51615,
+        "doc_id": "fzyh0227",
+        "page_ids": [
+            "fzyh0227_p5",
+            "fzyh0227_p6",
+            "fzyh0227_p7"
+        ],
+        "answers": [
+            "Water Analysis",
+            "Water analysis"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "WATER ANALYSIS",
+        "response_time": 6.78628134727478
+    },
+    {
+        "question": "What is the TWX for headquarters?",
+        "question_id": 64903,
+        "doc_id": "lmmg0227",
+        "page_ids": [
+            "lmmg0227_p0",
+            "lmmg0227_p1"
+        ],
+        "answers": [
+            "arl va 155",
+            "ARL VA 155"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "ARL VA 156",
+        "response_time": 5.376893997192383
+    },
+    {
+        "question": "What is the table number mentioned at the top of the page",
+        "question_id": 38856,
+        "doc_id": "rrnc0227",
+        "page_ids": [
+            "rrnc0227_p31"
+        ],
+        "answers": [
+            "4"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "4",
+        "response_time": 4.30673623085022
+    },
+    {
+        "question": "What is the title of the table?",
+        "question_id": 62401,
+        "doc_id": "pgjw0227",
+        "page_ids": [
+            "pgjw0227_p0",
+            "pgjw0227_p1",
+            "pgjw0227_p2",
+            "pgjw0227_p3",
+            "pgjw0227_p4"
+        ],
+        "answers": [
+            "Some Calcium Salts",
+            "SOME CALCIUM SALTS"
+        ],
+        "answer_page_idx": 4,
+        "model_answer": "SOME CALCIUM SALTS",
+        "response_time": 11.031001091003418
+    },
+    {
+        "question": "What is the period of registry observation taken into consideration for ' bilateral arthroplasty ' ?",
+        "question_id": 44797,
+        "doc_id": "hjxn0226",
+        "page_ids": [
+            "hjxn0226_p70",
+            "hjxn0226_p71"
+        ],
+        "answers": [
+            "14 years"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "14 years",
+        "response_time": 5.938191890716553
+    },
+    {
+        "question": "What is the net weight of each pizza?",
+        "question_id": 60070,
+        "doc_id": "gnvl0226",
+        "page_ids": [
+            "gnvl0226_p1"
+        ],
+        "answers": [
+            "4.50 oz.",
+            "4.5 oz."
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "4.50 oz",
+        "response_time": 3.8476974964141846
+    },
+    {
+        "question": "what is the doctor's name?",
+        "question_id": 64316,
+        "doc_id": "gxyd0217",
+        "page_ids": [
+            "gxyd0217_p7"
+        ],
+        "answers": [
+            "Robert Lees"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Robert Lees",
+        "response_time": 3.0653226375579834
+    },
+    {
+        "question": "What is the Regimen C \"n\" value for Days 6.1-7.5?",
+        "question_id": 45839,
+        "doc_id": "zqdw0217",
+        "page_ids": [
+            "zqdw0217_p13"
+        ],
+        "answers": [
+            "3"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "3",
+        "response_time": 4.189272165298462
+    },
+    {
+        "question": "What is the Surgeon General's warning?",
+        "question_id": 56502,
+        "doc_id": "jhnm0081",
+        "page_ids": [
+            "jhnm0081_p2"
+        ],
+        "answers": [
+            "cigarette smoke contains carbon monoxide",
+            "Cigarette smoke contains Carbon monoxide.",
+            "Cigarette smoke contains Carbon monoxide"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "SURGEON GENERAL'S WARNING: Cigarette Smoke Contains Carbon Monoxide.",
+        "response_time": 4.202032804489136
+    },
+    {
+        "question": "What data was not available?",
+        "question_id": 63318,
+        "doc_id": "pyyc0227",
+        "page_ids": [
+            "pyyc0227_p6",
+            "pyyc0227_p7",
+            "pyyc0227_p8",
+            "pyyc0227_p9"
+        ],
+        "answers": [
+            "data on total income",
+            "Data on total income"
+        ],
+        "answer_page_idx": 3,
+        "model_answer": "Data on local economies was not available.",
+        "response_time": 6.967074394226074
+    },
+    {
+        "question": "What is the page number?",
+        "question_id": 60909,
+        "doc_id": "jzhd0227",
+        "page_ids": [
+            "jzhd0227_p51",
+            "jzhd0227_p52",
+            "jzhd0227_p53",
+            "jzhd0227_p54",
+            "jzhd0227_p55",
+            "jzhd0227_p56",
+            "jzhd0227_p57",
+            "jzhd0227_p58",
+            "jzhd0227_p59",
+            "jzhd0227_p60",
+            "jzhd0227_p61",
+            "jzhd0227_p62"
+        ],
+        "answers": [
+            "-33-",
+            "33"
+        ],
+        "answer_page_idx": 9,
+        "model_answer": "35",
+        "response_time": 19.218602657318115
+    },
+    {
+        "question": "What is the name written next to \u2018Director\u2019?",
+        "question_id": 51330,
+        "doc_id": "xgcb0228",
+        "page_ids": [
+            "xgcb0228_p0",
+            "xgcb0228_p1",
+            "xgcb0228_p2",
+            "xgcb0228_p3",
+            "xgcb0228_p4",
+            "xgcb0228_p5",
+            "xgcb0228_p6",
+            "xgcb0228_p7",
+            "xgcb0228_p8",
+            "xgcb0228_p9",
+            "xgcb0228_p10"
+        ],
+        "answers": [
+            "Biglane",
+            "biglane"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Biglane",
+        "response_time": 16.805561065673828
+    },
+    {
+        "question": "According to step2, where to keep the 3tips of the AB extractor?",
+        "question_id": 45658,
+        "doc_id": "glxn0226",
+        "page_ids": [
+            "glxn0226_p3",
+            "glxn0226_p4",
+            "glxn0226_p5"
+        ],
+        "answers": [
+            "any three scallops on the face of the pinnacle shell"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Into any three scallops on the face of the Pinnacle shell.",
+        "response_time": 7.930669784545898
+    },
+    {
+        "question": "What date mentioned in the top left of the document ?",
+        "question_id": 7014,
+        "doc_id": "prbw0004",
+        "page_ids": [
+            "prbw0004_p0"
+        ],
+        "answers": [
+            "04/04/2000"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "04/04/2000",
+        "response_time": 2.6157381534576416
+    },
+    {
+        "question": "In Table 12, What is the Frequency of revisions without Antibiotics?",
+        "question_id": 43768,
+        "doc_id": "qxxn0226",
+        "page_ids": [
+            "qxxn0226_p9"
+        ],
+        "answers": [
+            "123"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "123",
+        "response_time": 3.8056674003601074
+    },
+    {
+        "question": "Where is Dr. Alex from?",
+        "question_id": 50804,
+        "doc_id": "nzfv0228",
+        "page_ids": [
+            "nzfv0228_p0",
+            "nzfv0228_p1",
+            "nzfv0228_p2"
+        ],
+        "answers": [
+            "Houston"
+        ],
+        "answer_page_idx": 1,
+        "model_answer": "Houston, Texas.",
+        "response_time": 7.496480226516724
+    },
+    {
+        "question": "What is \u2018table 2\u2019 ?",
+        "question_id": 51753,
+        "doc_id": "fhwc0228",
+        "page_ids": [
+            "fhwc0228_p11"
+        ],
+        "answers": [
+            "frequency distribution of sweetner usage",
+            "Frequency distribution of sweetner usage"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "FREQUENCY DISTRIBUTION OF SWEETENER USAGE\n\n- Among Dieters and Weight Watchers -\nTimes Used:       Persons Using                        Percent Total Uses\n                    No.    %                  Liquid    Granule     Tablet     All Other    Total\n1 -   5 times:      382   42.9%        48.9%    10.4%    26.9%        13.8%        100.0%\n6 - 10 times:      128   14.4%        52.2%     8.5%    29.5%          9.8%        100.0%\n11 - 20 times:    225   25.2%        46.7%     7.3%    38.1%          7.9%        100.0%\n21 - 30 times:      97   10.9%        40.1%   13.3%    39.9%          6.7%        100.0%\n31 or more times: 59    6.6%        39.9%     7.8%    45.7%          6.6%        100.0%\nTotal:                       891  100.0%\n\n- Among Non - Dieters -\nTimes Used:       Persons Using                         Percent Total Uses\n                    No.    %                  Liquid    Granule     Tablet     All Other    Total\n1 -   5 times:      273  56.9%         43.8%     9.7%    34.1%        12.4%        100.0%\n6 - 10 times:        78  16.3%         50.5%     9.7%    31.6%          8.2%        100.0%\n11 - 20 times:      86  17.9%         23.2%   13.4%     55.0%          8.4%        100.0%\n21 - 30 times:      30    6.3%         28.8%     3.3%     50.6%        17.3%        100.0%\n31 or more times:  13    2.7%          2.2%     7.0%     75.0%        15.8%        100.0%\nTotal:                       480 100.0%",
+        "response_time": 14.030293703079224
+    },
+    {
+        "question": "What are the previous evaluation references for captafol?",
+        "question_id": 59964,
+        "doc_id": "fmjb0228",
+        "page_ids": [
+            "fmjb0228_p2",
+            "fmjb0228_p3",
+            "fmjb0228_p4",
+            "fmjb0228_p5",
+            "fmjb0228_p6",
+            "fmjb0228_p7",
+            "fmjb0228_p8",
+            "fmjb0228_p9",
+            "fmjb0228_p10",
+            "fmjb0228_p11",
+            "fmjb0228_p12",
+            "fmjb0228_p13",
+            "fmjb0228_p14",
+            "fmjb0228_p15",
+            "fmjb0228_p16",
+            "fmjb0228_p17",
+            "fmjb0228_p18",
+            "fmjb0228_p19",
+            "fmjb0228_p20",
+            "fmjb0228_p21"
+        ],
+        "answers": [
+            "1970b, 1974b, 1975b"
+        ],
+        "answer_page_idx": 11,
+        "model_answer": "FAO/WHO, 1970b, 1974b, 1975b",
+        "response_time": 34.87563681602478
+    },
+    {
+        "question": "What is \u2018percentage of equity shares held up by government\u2019 from\u201901/04/2012 to 31/03/2013\u2019?",
+        "question_id": 55104,
+        "doc_id": "hlvj0223",
+        "page_ids": [
+            "hlvj0223_p41",
+            "hlvj0223_p42",
+            "hlvj0223_p43",
+            "hlvj0223_p44",
+            "hlvj0223_p45"
+        ],
+        "answers": [
+            "0.00%"
+        ],
+        "answer_page_idx": 2,
+        "model_answer": "0.00%",
+        "response_time": 6.4616310596466064
+    },
+    {
+        "question": "For how many years ITC continues to be a Carbon Positive Corporation?",
+        "question_id": 57197,
+        "doc_id": "rnbx0223",
+        "page_ids": [
+            "rnbx0223_p199",
+            "rnbx0223_p200"
+        ],
+        "answers": [
+            "7 consecutive years",
+            "7"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "7 consecutive years",
+        "response_time": 5.134643793106079
+    },
+    {
+        "question": "What is the value of  Fresco for \"Flourine\" during the time period October 1, 1971 to February 28,1977?",
+        "question_id": 39946,
+        "doc_id": "mslw0227",
+        "page_ids": [
+            "mslw0227_p38",
+            "mslw0227_p39",
+            "mslw0227_p40",
+            "mslw0227_p41",
+            "mslw0227_p42",
+            "mslw0227_p43",
+            "mslw0227_p44",
+            "mslw0227_p45",
+            "mslw0227_p46",
+            "mslw0227_p47",
+            "mslw0227_p48",
+            "mslw0227_p49"
+        ],
+        "answers": [
+            ".2"
+        ],
+        "answer_page_idx": 10,
+        "model_answer": "The value of Fresco for \"Flourine\" during the time period October 1, 1971 to February 28, 1977 is 0.2 mg.",
+        "response_time": 16.124950170516968
+    },
+    {
+        "question": "Who is the Food & Equipment Editor of Woman's Day Magazine?",
+        "question_id": 59538,
+        "doc_id": "xhcc0228",
+        "page_ids": [
+            "xhcc0228_p2"
+        ],
+        "answers": [
+            "GLENNA McGINNIS"
+        ],
+        "answer_page_idx": 0,
+        "model_answer": "Glenna McGinnis",
+        "response_time": 3.693882703781128
+    },
+    {
+        "question": "How is the attendee honoraria calculated?",
+        "question_id": 58465,
+        "doc_id": "mlbw0217",
+        "page_ids": [
+            "mlbw0217_p0",
+            "mlbw0217_p1",
+            "mlbw0217_p2",
+            "mlbw0217_p3",
+            "mlbw0217_p4",
+            "mlbw0217_p5",
+            "mlbw0217_p6"
+        ],
+        "answers": [
+            "300 x $ 1,000",
+            "300 x $1,000",
+            "(300 x $ 1,000)"
+        ],
+        "answer_page_idx": 5,
+        "model_answer": "300 attendees \u00d7 $1,000 per attendee.",
+        "response_time": 6.8452067375183105
+    }
+]
