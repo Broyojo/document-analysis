@@ -35,7 +35,7 @@ document_intelligence_client = DocumentIntelligenceClient(
     endpoint=endpoint, credential=AzureKeyCredential(key)
 )
 
-image_path = "/mnt/ssd/images/ffcn0226_p5.jpg"
+image_path = "/mnt/ssd/images/ffbl0226_p2.jpg"
 
 with open(image_path, "rb") as f:
     poller = document_intelligence_client.begin_analyze_document(
@@ -51,6 +51,16 @@ with open("ocr_markdown_output.md", "w") as f:
 
 # Get words from the first page (assuming single-page document)
 words = result.pages[0].words
+
+print(words)
+
+concated = ""
+for word in words:
+    concated += word["content"] + " "
+
+# note: markdown seems to be better for structured output, but the ocr quality is the same as the text output
+with open("ocr_text_output.txt", "w") as f:
+    f.write(concated)
 
 # Draw bounding boxes
 draw_bounding_boxes(image_path, words, "boundingbox_ocr.jpg")

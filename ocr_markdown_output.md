@@ -1,19 +1,57 @@
-<!-- PageHeader="February 9, 2017" -->
+:selected:
+<!-- PageHeader="TYPIST" -->
 
-The President The White House Washington, D.C. 20500
+<!-- PageHeader="WITHOUT REMOVING SET FROM YOUR TYPEWRITER." -->
 
-Dear Mr. President,
+& U.S. GOVERNMENT PRINTING OFFICE: 1978-208-081
+===
 
-We, the CEO Council (undersigned herein), representing the production agricultural value chain, including many agricultural producers and farm input developers and suppliers, look forward to working with you and your Administration on matters of importance to American agriculture.
+U.S. DEPARTMENT OF COMMERCE Patent and Trademark Office
+===
 
-The challenges we face in agriculture are significant. Many experts emphasize that producers must grow as much food in the next 50 years as was produced over all previous history to meet the demands of our expanding global population. A firm commitment by the U.S. government to aggressively support agricultural innovation and science-based regulatory decisions will be necessary to ensure farmers have the tools they need to produce a safe and abundant supply of nutritious food, in addition to feed, fuel and fiber, in an environmentally sound and sustainable manner.
+INSTRUCTIONS: This form is for use in preparing Certificate of Correction copy for printing by the Patent and Trademark Office.
 
-The policy and regulatory environment your Administration establishes can ensure that agricultural innovation flourishes and American farmers are able to meet the food production goals necessary to feed billions more people. We are ready to provide the White House and the Executive Branch Departments and Agencies, as well as Congress, with policy concepts that foster stability in the U.S. agriculture economy with a strong and predictable farm safety net and promotes American competitiveness through research; marketability and trade of agricultural commodities; rural economic growth; and plant, animal, and environmental health, among many other things.
+& Return both parts of this form, DO NOT FURNISH PHOTOCOPIES FOR PRINTING.
 
-We appreciate your attention to these and other issues of value to American production agriculture and food consumers everywhere.
+\# Type within the borders printed on the form.
 
-Sincerely,
+& use a typewriter that will give clean, clear impressions. Unsuitable copy will have to be retyped and therefore delay printing. Use a typewriter with a carbon ribbon if possible. If a fabric ribbon typewriter is used, the ribbon should be medium inked and in good condition. Changes are best made with white correction fluid.
 
-American Farm Bureau Foundation, Zippy Duvall American Seed Trade Association, Andy LaVigne American Soybean Association, Steve Censky Biotechnology Innovation Organization , Dana O'Brien CropLife America, Jay Vroom The Fertilizer Institute, Chris Jahn National Association of Wheat Growers, Chandler Goule National Cattlemen's Beef Association, Kendal Frazier National Corn Growers Association, Chris Novak National Cotton Council, Gary Adams National Council of Farmer Cooperatives, Chuck Conner National Farmers Union, Roger Johnson National Milk Producers Federation, Jim Mulhern National Pork Producers Council, Neil Dierks United Fresh Produce Association, Tom Stenzel USA Rice Federation, Betsy Ward
+\# If necessary, staple in the area indicated in the left margin, ONLY,
 
-<!-- PageFooter="Source: https://www.industrydocuments.ucsf.edu/docs/ffcn02 001225 00000062-00004" -->
+\# Type mailing address and patent number below within the perforated area.
+
+« Indicate additional printed copies requested at 30€ per page.
+
+DETACH HERE BEFORE MAILING BOTH COPIES OF THE TYPED CERTIFICATE TO THE PATENT AND TRADEMARK OFFICE
+
+\-
+
+Stanie Mare Only !
+
+3N17 WINA S.N3IN18₫
+ :selected: :selected:
+
+## UNITED STATES PATENT AND TRADEMARK OFFICE CERTIFICATE OF CORRECTION
+
+PATENT NO. :
+
+5,232,709
+
+DATED August 3, 1993
+
+INVENTOR(S) : SALTMAN, ETAL.
+
+It is certified that error appears in the above-identified patent and that said Letters Patent are hereby corrected as shown below:
+
+Assignee should read -- The Procter & Gamble Company, Cincinnati, Ohio Regents of the University of California, Oakland, California
+
+MAILING ADDRESS OF SENDER:
+
+PATENT NO.
+
+5,232,709
+
+No. of sdơi. copies
+
+<!-- PageFooter="Source: Https://www.industrydocuments.ucsf.edu/docs/ffbl0226" -->
