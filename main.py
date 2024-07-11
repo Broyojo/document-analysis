@@ -76,7 +76,7 @@ try:
         if ENABLE_IMAGE and ENABLE_OCR:
             image_paths = [f"/mnt/ssd/images/{page_id}.jpg" for page_id in page_ids]
             ocr_start = time.time()
-            ocr_results = parallel_ocr(image_paths)
+            ocr_results = parallel_ocr(image_paths, markdown=True)
             ocr_time = time.time() - ocr_start
             input = [{"type": "text", "text": question}]
 
@@ -118,7 +118,7 @@ try:
             ocr_start = time.time()
             image_paths = [f"/mnt/ssd/images/{page_id}.jpg" for page_id in page_ids]
 
-            for result in parallel_ocr(image_paths):
+            for result in parallel_ocr(image_paths, markdown=True):
                 ocr_concated += content + "\n\n"
 
             prompt.append(

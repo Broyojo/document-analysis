@@ -7,7 +7,7 @@ from scipy import stats
 include_quadratic_fit = False
 
 # Load data from the JSON file
-with open("eval_data.json", "r") as file:
+with open("eval_data_ocr_and_image_37.json", "r") as file:
     try:
         data = json.load(file)["data"]
     except:

@@ -15,23 +15,23 @@ document_intelligence_client = DocumentIntelligenceClient(
 )
 
 
-def ocr(image_path: str):
+def ocr(image_path: str, markdown: bool = False):
     with open(image_path, "rb") as f:
         poller = document_intelligence_client.begin_analyze_document(
-            "prebuilt-layout",
+            "prebuilt-read",
             analyze_request=f,
             content_type="application/octet-stream",
-            output_content_format=ContentFormat.MARKDOWN,
+            output_content_format=ContentFormat.MARKDOWN if markdown else None,
         )
     result = poller.result()
     return result
 
 
-def parallel_ocr(image_paths: list[str], max_workers: int = 20):
+def parallel_ocr(image_paths: list[str], max_workers: int = 20, markdown: bool = False):
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         results = list(
             executor.map(
-                lambda x: (x[0], ocr(x[1])),
+                lambda x: (x[0], ocr(x[1], markdown=markdown)),
                 enumerate(image_paths),
             )
         )
