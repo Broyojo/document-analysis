@@ -117,7 +117,7 @@ def plot_accuracy_results(accuracy_results):
 
 # Main execution
 if __name__ == "__main__":
-    file_path = "eval_data.json"
+    file_path = "eval_data_ocr_and_image_400.json"
     accuracy_results = compute_accuracy(file_path)
     print_accuracy_results(accuracy_results)
     plot_accuracy_results(accuracy_results)

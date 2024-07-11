@@ -1,12 +1,15 @@
 import base64
 import inspect
 import json
+import logging
 import random
+import sys
 import time
 from openai import OpenAI
 from tqdm import tqdm
 from calc_ci import wilson_score_interval
 from ocr import ocr, parallel_ocr
+import traceback
 
 SEED = 12345
 
@@ -30,6 +33,43 @@ def new_print(*args, **kwargs):
 
 # globaly replace print with new_print
 inspect.builtins.print = new_print
+
+# set up some logging (TODO: when this project is more robust make a good logger and unit testing, this script is too fragile)
+# TODO: also add some kind of token calculation thing so that I can accurately measure the number of tokens. i'm just going by dollars spent now through the billing
+
+# # Set up logging to write to a file
+# logging.basicConfig(
+#     level=logging.INFO,
+#     format="%(asctime)s - %(levelname)s - %(message)s",
+#     filename="output.log",
+#     filemode="a",  # 'a' means append (add to the end of the file)
+# )
+
+# # Create a custom logger
+# logger = logging.getLogger()
+
+# # Create handlers
+# c_handler = logging.StreamHandler()  # Console handler
+# f_handler = logging.FileHandler("output.log")  # File handler
+
+# # Set level for handlers
+# c_handler.setLevel(logging.INFO)
+# f_handler.setLevel(logging.INFO)
+
+# # Add handlers to the logger
+# logger.addHandler(c_handler)
+# logger.addHandler(f_handler)
+
+
+# # Define a custom print function
+# def custom_print(*args, **kwargs):
+#     print(*args, **kwargs)  # This will print to stdout
+#     # Log the printed message
+#     logger.info(" ".join(map(str, args)))
+
+
+# # Replace the built-in print function with our custom function
+# sys.stdout.write = custom_print
 
 
 def load_dataset(path, sample_ratio=0.01, k=None):
@@ -76,7 +116,13 @@ try:
         if ENABLE_IMAGE and ENABLE_OCR:
             image_paths = [f"/mnt/ssd/images/{page_id}.jpg" for page_id in page_ids]
             ocr_start = time.time()
-            ocr_results = parallel_ocr(image_paths, markdown=True)
+            try:
+                ocr_results = parallel_ocr(image_paths, markdown=True)
+            except:
+                print("encountered error during OCR")
+                traceback.print_exc()
+                continue
+
             ocr_time = time.time() - ocr_start
             input = [{"type": "text", "text": question}]
 
@@ -118,7 +164,14 @@ try:
             ocr_start = time.time()
             image_paths = [f"/mnt/ssd/images/{page_id}.jpg" for page_id in page_ids]
 
-            for result in parallel_ocr(image_paths, markdown=True):
+            try:
+                ocr_results = parallel_ocr(image_paths, markdown=True)
+            except:
+                print("encountered error during OCR")
+                traceback.print_exc()
+                continue
+
+            for result in ocr_results:
                 ocr_concated += content + "\n\n"
 
             prompt.append(
@@ -183,8 +236,6 @@ try:
 except KeyboardInterrupt:
     print("Interrupted")
 except Exception as e:
-    import traceback
-
     print(traceback.format_exc())
 finally:
     accuracy = total_correct / count

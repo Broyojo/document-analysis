@@ -24,7 +24,7 @@ def process_eval_data(file_path, anls_threshold=0.5):
 
 
 def main():
-    file_path = "eval_data.json"
+    file_path = "eval_data_ocr_and_image_400.json"
     anls_threshold = 0.5  # You can adjust this if needed
 
     overall_anls, individual_scores = process_eval_data(file_path, anls_threshold)
