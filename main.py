@@ -6,8 +6,10 @@ import time
 from openai import OpenAI
 from tqdm import tqdm
 from calc_ci import wilson_score_interval
+from ocr import ocr, parallel_ocr
 
 SEED = 42069
+OCR_ONLY = True
 
 random.seed(SEED)
 
@@ -34,8 +36,8 @@ def load_dataset(path, sample_ratio=0.01, k=None):
     return random.sample(data, k=int(sample_ratio * len(data)) if k is None else k)
 
 
-# TODO: need about 400 samples for 95% confidence interval with 5% margin of error
-dataset = load_dataset("./dataset/mp-docvqa/val.json", k=50)
+# note: need about 400 samples for 95% confidence interval with 5% margin of error
+dataset = load_dataset("./dataset/mp-docvqa/val.json", k=400)
 print("Loaded dataset with", len(dataset), "samples")
 
 
@@ -64,25 +66,41 @@ try:
         prompt = [
             {
                 "role": "system",
-                "content": "You are an assistant which extracts information from documents. Output the final answer with no other extraneous text.",  # TODO: experiment with better prompt structure (https://arxiv.org/pdf/2312.16171). maybe add <thinking></thinking> tokens?
-            },
-            {
-                "role": "user",
-                "content": [{"type": "text", "text": question}]
-                + [
-                    {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": f"data:image/jpeg;base64,{encode_base64(image_path)}"
-                        },
-                    }
-                    for image_path in map(
-                        lambda page_id: f"/mnt/ssd/images/{page_id}.jpg",
-                        page_ids,
-                    )
-                ],
+                "content": "You are an assistant which extracts information from documents. Output the final answer with no other extraneous text.",  # TODO: experiment with better prompt structure (https://arxiv.org/pdf/2312.16171). maybe add <thinking></thinking> tokens? however must be careful to not balloon latency and cost
             },
         ]
+
+        if not OCR_ONLY:
+            prompt.append(
+                {
+                    "role": "user",
+                    "content": [{"type": "text", "text": question}]
+                    + [
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{encode_base64(image_path)}"
+                            },
+                        }
+                        for image_path in map(
+                            lambda page_id: f"/mnt/ssd/images/{page_id}.jpg",
+                            page_ids,
+                        )
+                    ],
+                }
+            )
+        else:
+            ocr_concated = ""
+            ocr_start = time.time()
+            image_paths = [f"/mnt/ssd/images/{page_id}.jpg" for page_id in page_ids]
+
+            for result in parallel_ocr(image_paths):
+                ocr_concated += content + "\n\n"
+
+            prompt.append(
+                {"role": "user", "content": question + "\n\n\n" + ocr_concated}
+            )
+            ocr_time = time.time() - ocr_start
 
         print("=================== QUESTION ===================")
 
@@ -126,7 +144,7 @@ try:
                 "answers": answers,
                 "answer_page_idx": answer_page_idx,
                 "model_answer": model_answer,
-                "response_time": response_time,
+                "response_time": response_time + (ocr_time if OCR_ONLY else 0),
             }
         )
 
@@ -140,6 +158,10 @@ try:
         )
 except KeyboardInterrupt:
     print("Interrupted")
+except Exception as e:
+    import traceback
+
+    print(traceback.format_exc())
 finally:
     print("Accuracy:", total_correct / count * 100)
     with open("eval_data.json", "w") as f:

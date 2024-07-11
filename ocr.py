@@ -3,8 +3,42 @@ from PIL import Image, ImageDraw
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.documentintelligence import DocumentIntelligenceClient
 from azure.ai.documentintelligence.models import ContentFormat
+import concurrent.futures
 
 # billing: https://portal.azure.com/#view/Microsoft_Azure_GTM/BillingAccountMenuBlade/~/Overview/billingAccountId/%2Fproviders%2FMicrosoft.Billing%2FbillingAccounts%2F3f6e673c-aaeb-4c82-a5cf-07f492ecd074%3Aca8c8f47-c534-48a4-995e-a95d4dceb258_2019-05-31/accountType/Individual
+
+endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
+key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
+
+document_intelligence_client = DocumentIntelligenceClient(
+    endpoint=endpoint, credential=AzureKeyCredential(key)
+)
+
+
+def ocr(image_path: str):
+    with open(image_path, "rb") as f:
+        poller = document_intelligence_client.begin_analyze_document(
+            "prebuilt-layout",
+            analyze_request=f,
+            content_type="application/octet-stream",
+            output_content_format=ContentFormat.MARKDOWN,
+        )
+    result = poller.result()
+    return result
+
+
+def parallel_ocr(image_paths: list[str], max_workers: int = 20):
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        results = list(
+            executor.map(
+                lambda x: (x[0], ocr(x[1])),
+                enumerate(image_paths),
+            )
+        )
+
+    results.sort(key=lambda x: x[0])
+    results = [result[1] for result in results]
+    return results
 
 
 def draw_bounding_boxes(image_path, words, output_path):
@@ -27,40 +61,57 @@ def draw_bounding_boxes(image_path, words, output_path):
         print(f"Image with bounding boxes saved as {output_path}")
 
 
-# Your existing code to get the document analysis result
-endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
-key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
+if __name__ == "__main__":
+    # Your existing code to get the document analysis result
 
-document_intelligence_client = DocumentIntelligenceClient(
-    endpoint=endpoint, credential=AzureKeyCredential(key)
-)
+    PARALLEL = True
 
-image_path = "/mnt/ssd/images/ffbl0226_p2.jpg"
+    if PARALLEL:
+        from pathlib import Path
+        import time
 
-with open(image_path, "rb") as f:
-    poller = document_intelligence_client.begin_analyze_document(
-        "prebuilt-layout",
-        analyze_request=f,
-        content_type="application/octet-stream",
-        output_content_format=ContentFormat.MARKDOWN,
-    )
-result = poller.result()
+        files = Path("/mnt/ssd/images/").glob("ffbl0226_p*.jpg")
+        image_paths = [str(file) for file in files]
+        print(image_paths)
 
-with open("ocr_markdown_output.md", "w") as f:
-    f.write(result["content"])
+        start = time.time()
+        results = parallel_ocr(image_paths)
+        print(
+            f"Time taken: {time.time() - start:.2f} seconds | ~{len(image_paths) / (time.time() - start):.2f} seconds per image"
+        )
 
-# Get words from the first page (assuming single-page document)
-words = result.pages[0].words
+        for result in results:
+            print(result["content"])
+            print("\n\n====================================\n")
 
-print(words)
+    else:
 
-concated = ""
-for word in words:
-    concated += word["content"] + " "
+        image_path = "/mnt/ssd/images/ffbl0226_p2.jpg"
 
-# note: markdown seems to be better for structured output, but the ocr quality is the same as the text output
-with open("ocr_text_output.txt", "w") as f:
-    f.write(concated)
+        with open(image_path, "rb") as f:
+            poller = document_intelligence_client.begin_analyze_document(
+                "prebuilt-layout",
+                analyze_request=f,
+                content_type="application/octet-stream",
+                output_content_format=ContentFormat.MARKDOWN,
+            )
+        result = poller.result()
 
-# Draw bounding boxes
-draw_bounding_boxes(image_path, words, "boundingbox_ocr.jpg")
+        with open("ocr_markdown_output.md", "w") as f:
+            f.write(result["content"])
+
+        # Get words from the first page (assuming single-page document)
+        words = result.pages[0].words
+
+        print(words)
+
+        concated = ""
+        for word in words:
+            concated += word["content"] + " "
+
+        # note: markdown seems to be better for structured output, but the ocr quality is the same as the text output
+        with open("ocr_text_output.txt", "w") as f:
+            f.write(concated)
+
+        # Draw bounding boxes
+        draw_bounding_boxes(image_path, words, "boundingbox_ocr.jpg")

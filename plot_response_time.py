@@ -7,7 +7,7 @@ from scipy import stats
 include_quadratic_fit = False
 
 # Load data from the JSON file
-with open("eval_data400.json", "r") as file:
+with open("eval_data.json", "r") as file:
     data = json.load(file)
 
 # Extract number of documents (pages) and response times
