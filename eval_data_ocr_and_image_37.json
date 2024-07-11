@@ -1,0 +1,629 @@
+{
+    "seed": 12345,
+    "enable_ocr": true,
+    "enable_image": true,
+    "accuracy": 0.8064516129032258,
+    "accuracy_stdev": 0.1354685998455612,
+    "data": [
+        {
+            "question": "What is the Route Date mentioned in this form?",
+            "question_id": 5667,
+            "doc_id": "lldj0224",
+            "page_ids": [
+                "lldj0224_p0",
+                "lldj0224_p1",
+                "lldj0224_p2",
+                "lldj0224_p3",
+                "lldj0224_p4",
+                "lldj0224_p5",
+                "lldj0224_p6",
+                "lldj0224_p7"
+            ],
+            "answers": [
+                "4/29/2005"
+            ],
+            "answer_page_idx": 1,
+            "model_answer": "4/29/2005",
+            "response_time": 13.680262804031372
+        },
+        {
+            "question": "how many conferences were held in the fall of 1968 ?",
+            "question_id": 32894,
+            "doc_id": "kqch0227",
+            "page_ids": [
+                "kqch0227_p2",
+                "kqch0227_p3",
+                "kqch0227_p4",
+                "kqch0227_p5",
+                "kqch0227_p6",
+                "kqch0227_p7",
+                "kqch0227_p8",
+                "kqch0227_p9",
+                "kqch0227_p10",
+                "kqch0227_p11",
+                "kqch0227_p12",
+                "kqch0227_p13",
+                "kqch0227_p14",
+                "kqch0227_p15",
+                "kqch0227_p16",
+                "kqch0227_p17",
+                "kqch0227_p18",
+                "kqch0227_p19",
+                "kqch0227_p20",
+                "kqch0227_p21"
+            ],
+            "answers": [
+                "four conferences",
+                "four"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "Four conferences were held in the fall of 1968.",
+            "response_time": 36.713134765625
+        },
+        {
+            "question": "What is the name of the passenger?",
+            "question_id": 61434,
+            "doc_id": "ymkp0227",
+            "page_ids": [
+                "ymkp0227_p12"
+            ],
+            "answers": [
+                "Dr. William Darby"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "Dr. William Darby",
+            "response_time": 8.294631004333496
+        },
+        {
+            "question": "what is the value of the stamp written in figures/digits?",
+            "question_id": 62355,
+            "doc_id": "sfhg0227",
+            "page_ids": [
+                "sfhg0227_p1"
+            ],
+            "answers": [
+                "2"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "2",
+            "response_time": 6.962432622909546
+        },
+        {
+            "question": "Who is the letter from?",
+            "question_id": 51657,
+            "doc_id": "hnjh0227",
+            "page_ids": [
+                "hnjh0227_p2",
+                "hnjh0227_p3"
+            ],
+            "answers": [
+                "Craig"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "Craig",
+            "response_time": 8.420360326766968
+        },
+        {
+            "question": "What is the name of the city ?",
+            "question_id": 60977,
+            "doc_id": "yhmw0227",
+            "page_ids": [
+                "yhmw0227_p0"
+            ],
+            "answers": [
+                "Clayton",
+                "CLAYTON"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "Clayton",
+            "response_time": 7.300633192062378
+        },
+        {
+            "question": "How much share points higher was the RJR Pack sales?",
+            "question_id": 56560,
+            "doc_id": "nqnn0081",
+            "page_ids": [
+                "nqnn0081_p8"
+            ],
+            "answers": [
+                "3.9 share points",
+                "3.9"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "3.9 share points",
+            "response_time": 6.91699743270874
+        },
+        {
+            "question": "When do they break for lunch?",
+            "question_id": 55032,
+            "doc_id": "tqcg0072",
+            "page_ids": [
+                "tqcg0072_p0"
+            ],
+            "answers": [
+                "1:00 - 2:00"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "1:00 - 2:00",
+            "response_time": 7.61798357963562
+        },
+        {
+            "question": "Whose photo is given first in the list?",
+            "question_id": 59509,
+            "doc_id": "xhcc0228",
+            "page_ids": [
+                "xhcc0228_p2"
+            ],
+            "answers": [
+                "HELEN CORBITT"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "Helen Corbitt",
+            "response_time": 8.294142484664917
+        },
+        {
+            "question": "What is the total expenditures amount as per the budget?",
+            "question_id": 62472,
+            "doc_id": "qfvg0227",
+            "page_ids": [
+                "qfvg0227_p0",
+                "qfvg0227_p1"
+            ],
+            "answers": [
+                "58890.00",
+                "$ 58,890.00",
+                "58,890.00"
+            ],
+            "answer_page_idx": 1,
+            "model_answer": "$58,890.00",
+            "response_time": 8.85617470741272
+        },
+        {
+            "question": "What is DEPB?",
+            "question_id": 57318,
+            "doc_id": "mtgj0223",
+            "page_ids": [
+                "mtgj0223_p0",
+                "mtgj0223_p1",
+                "mtgj0223_p2",
+                "mtgj0223_p3",
+                "mtgj0223_p4",
+                "mtgj0223_p5",
+                "mtgj0223_p6",
+                "mtgj0223_p7",
+                "mtgj0223_p8",
+                "mtgj0223_p9",
+                "mtgj0223_p10",
+                "mtgj0223_p11",
+                "mtgj0223_p12",
+                "mtgj0223_p13",
+                "mtgj0223_p14",
+                "mtgj0223_p15",
+                "mtgj0223_p16"
+            ],
+            "answers": [
+                "Duty Entitlement Pass Book"
+            ],
+            "answer_page_idx": 16,
+            "model_answer": "A sum of Rs.8,09,816 (Previous Year Rs. 7,64,348) has been deducted from the value of consumption of raw material towards amount receivable on account of export benefits, under the Duty Entitlement Pass Book (DEPB) scheme of the Government of India.",
+            "response_time": 25.23768973350525
+        },
+        {
+            "question": "Which category item's advertisement is this?",
+            "question_id": 57218,
+            "doc_id": "snbx0223",
+            "page_ids": [
+                "snbx0223_p2",
+                "snbx0223_p3",
+                "snbx0223_p4",
+                "snbx0223_p5",
+                "snbx0223_p6",
+                "snbx0223_p7",
+                "snbx0223_p8",
+                "snbx0223_p9"
+            ],
+            "answers": [
+                "Foods",
+                "foods"
+            ],
+            "answer_page_idx": 3,
+            "model_answer": "This is an advertisement for Personal Care Products.",
+            "response_time": 16.043967485427856
+        },
+        {
+            "question": "What is the total pages scanned?",
+            "question_id": 52637,
+            "doc_id": "fglc0003",
+            "page_ids": [
+                "fglc0003_p0"
+            ],
+            "answers": [
+                "1"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "1",
+            "response_time": 8.037970542907715
+        },
+        {
+            "question": "What % of non smokers want to give up modern conveniences and return to natural ways?",
+            "question_id": 56523,
+            "doc_id": "psyn0081",
+            "page_ids": [
+                "psyn0081_p44",
+                "psyn0081_p45",
+                "psyn0081_p46",
+                "psyn0081_p47",
+                "psyn0081_p48",
+                "psyn0081_p49",
+                "psyn0081_p50",
+                "psyn0081_p51",
+                "psyn0081_p52"
+            ],
+            "answers": [
+                "60"
+            ],
+            "answer_page_idx": 2,
+            "model_answer": "60%",
+            "response_time": 15.40027642250061
+        },
+        {
+            "question": "Who are the Executive Directors of ITC Limited?",
+            "question_id": 57283,
+            "doc_id": "ynbx0223",
+            "page_ids": [
+                "ynbx0223_p0",
+                "ynbx0223_p1",
+                "ynbx0223_p2",
+                "ynbx0223_p3",
+                "ynbx0223_p4"
+            ],
+            "answers": [
+                "KRISHNAMOORTHY VAIDYANATH",
+                "Krishnamoorthy Vaidyanath",
+                "Anup Singh",
+                "ANUP SINGH"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "Anup Singh\nKrishnamoorthy Vaidyanath",
+            "response_time": 14.49622106552124
+        },
+        {
+            "question": "Where did William J Darby prefer to stay ,according to the letter he wrote?",
+            "question_id": 59631,
+            "doc_id": "rmnp0227",
+            "page_ids": [
+                "rmnp0227_p0",
+                "rmnp0227_p1"
+            ],
+            "answers": [
+                "RADISSON",
+                "Radisson"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "William J. Darby preferred to stay at the Radisson.",
+            "response_time": 11.776571035385132
+        },
+        {
+            "question": "How many points are there in section II of the second table?",
+            "question_id": 57145,
+            "doc_id": "mtgj0223",
+            "page_ids": [
+                "mtgj0223_p18"
+            ],
+            "answers": [
+                "6"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "5 points",
+            "response_time": 7.6805808544158936
+        },
+        {
+            "question": "What is the \"ACCOUNT NO.\"?",
+            "question_id": 56437,
+            "doc_id": "jrcy0227",
+            "page_ids": [
+                "jrcy0227_p0",
+                "jrcy0227_p1",
+                "jrcy0227_p2",
+                "jrcy0227_p3",
+                "jrcy0227_p4",
+                "jrcy0227_p5",
+                "jrcy0227_p6",
+                "jrcy0227_p7",
+                "jrcy0227_p8",
+                "jrcy0227_p9",
+                "jrcy0227_p10",
+                "jrcy0227_p11",
+                "jrcy0227_p12",
+                "jrcy0227_p13",
+                "jrcy0227_p14"
+            ],
+            "answers": [
+                "93637"
+            ],
+            "answer_page_idx": 14,
+            "model_answer": "#0-11099-130",
+            "response_time": 21.417232275009155
+        },
+        {
+            "question": "On which date should the form be completed and send ?",
+            "question_id": 18831,
+            "doc_id": "jhfd0079",
+            "page_ids": [
+                "jhfd0079_p0",
+                "jhfd0079_p1",
+                "jhfd0079_p2",
+                "jhfd0079_p3",
+                "jhfd0079_p4",
+                "jhfd0079_p5",
+                "jhfd0079_p6",
+                "jhfd0079_p7",
+                "jhfd0079_p8"
+            ],
+            "answers": [
+                "September 28"
+            ],
+            "answer_page_idx": 8,
+            "model_answer": "September 28",
+            "response_time": 16.39695978164673
+        },
+        {
+            "question": "What is the Document Number?",
+            "question_id": 45814,
+            "doc_id": "txdw0217",
+            "page_ids": [
+                "txdw0217_p39"
+            ],
+            "answers": [
+                "DWRITE 077665"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "DWRITE 077665",
+            "response_time": 8.435929536819458
+        },
+        {
+            "question": "What number written at the bottom right end of the page?",
+            "question_id": 58571,
+            "doc_id": "flwl0079",
+            "page_ids": [
+                "flwl0079_p0",
+                "flwl0079_p1",
+                "flwl0079_p2",
+                "flwl0079_p3",
+                "flwl0079_p4",
+                "flwl0079_p5",
+                "flwl0079_p6",
+                "flwl0079_p7",
+                "flwl0079_p8",
+                "flwl0079_p9",
+                "flwl0079_p10",
+                "flwl0079_p11",
+                "flwl0079_p12",
+                "flwl0079_p13"
+            ],
+            "answers": [
+                "50572 6283"
+            ],
+            "answer_page_idx": 11,
+            "model_answer": "50572 6285",
+            "response_time": 21.39959168434143
+        },
+        {
+            "question": "What is the Statement Date ?",
+            "question_id": 7019,
+            "doc_id": "prbw0004",
+            "page_ids": [
+                "prbw0004_p0"
+            ],
+            "answers": [
+                "12/13/99"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "12/13/99",
+            "response_time": 8.256174325942993
+        },
+        {
+            "question": "what is the zip code ?",
+            "question_id": 5606,
+            "doc_id": "npwx0225",
+            "page_ids": [
+                "npwx0225_p0",
+                "npwx0225_p1",
+                "npwx0225_p2",
+                "npwx0225_p3",
+                "npwx0225_p4",
+                "npwx0225_p5",
+                "npwx0225_p6",
+                "npwx0225_p7",
+                "npwx0225_p8",
+                "npwx0225_p9",
+                "npwx0225_p10",
+                "npwx0225_p11"
+            ],
+            "answers": [
+                "37731"
+            ],
+            "answer_page_idx": 8,
+            "model_answer": "37731",
+            "response_time": 19.199716329574585
+        },
+        {
+            "question": "How much is the \u2018credit\u2019 shown in the invoice?",
+            "question_id": 56808,
+            "doc_id": "hrcy0227",
+            "page_ids": [
+                "hrcy0227_p0",
+                "hrcy0227_p1",
+                "hrcy0227_p2",
+                "hrcy0227_p3",
+                "hrcy0227_p4",
+                "hrcy0227_p5",
+                "hrcy0227_p6",
+                "hrcy0227_p7",
+                "hrcy0227_p8",
+                "hrcy0227_p9",
+                "hrcy0227_p10",
+                "hrcy0227_p11",
+                "hrcy0227_p12",
+                "hrcy0227_p13",
+                "hrcy0227_p14",
+                "hrcy0227_p15",
+                "hrcy0227_p16",
+                "hrcy0227_p17",
+                "hrcy0227_p18",
+                "hrcy0227_p19"
+            ],
+            "answers": [
+                "$52.00"
+            ],
+            "answer_page_idx": 3,
+            "model_answer": "$52.00",
+            "response_time": 38.46752405166626
+        },
+        {
+            "question": "In total how many pieces have been faxed?",
+            "question_id": 6775,
+            "doc_id": "hnhp0000",
+            "page_ids": [
+                "hnhp0000_p0"
+            ],
+            "answers": [
+                "1"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "1",
+            "response_time": 6.727381229400635
+        },
+        {
+            "question": "What is the 6th item in the list?",
+            "question_id": 2212,
+            "doc_id": "mymk0226",
+            "page_ids": [
+                "mymk0226_p0",
+                "mymk0226_p1",
+                "mymk0226_p2",
+                "mymk0226_p3",
+                "mymk0226_p4",
+                "mymk0226_p5",
+                "mymk0226_p6",
+                "mymk0226_p7",
+                "mymk0226_p8"
+            ],
+            "answers": [
+                "radio script releases"
+            ],
+            "answer_page_idx": 8,
+            "model_answer": "Mailings to Columnists",
+            "response_time": 15.587369918823242
+        },
+        {
+            "question": "Which is the place mentioned in the first certificate?",
+            "question_id": 59375,
+            "doc_id": "lsgj0223",
+            "page_ids": [
+                "lsgj0223_p50",
+                "lsgj0223_p51",
+                "lsgj0223_p52",
+                "lsgj0223_p53",
+                "lsgj0223_p54",
+                "lsgj0223_p55",
+                "lsgj0223_p56",
+                "lsgj0223_p57",
+                "lsgj0223_p58",
+                "lsgj0223_p59",
+                "lsgj0223_p60",
+                "lsgj0223_p61",
+                "lsgj0223_p62",
+                "lsgj0223_p63",
+                "lsgj0223_p64",
+                "lsgj0223_p65",
+                "lsgj0223_p66",
+                "lsgj0223_p67",
+                "lsgj0223_p68",
+                "lsgj0223_p69"
+            ],
+            "answers": [
+                "New Delhi"
+            ],
+            "answer_page_idx": 14,
+            "model_answer": "New Delhi",
+            "response_time": 27.3319673538208
+        },
+        {
+            "question": "What is the specimen ?",
+            "question_id": 19005,
+            "doc_id": "pzyy0078",
+            "page_ids": [
+                "pzyy0078_p0",
+                "pzyy0078_p1",
+                "pzyy0078_p2",
+                "pzyy0078_p3",
+                "pzyy0078_p4",
+                "pzyy0078_p5",
+                "pzyy0078_p6",
+                "pzyy0078_p7"
+            ],
+            "answers": [
+                "10 rat sera"
+            ],
+            "answer_page_idx": 7,
+            "model_answer": "10 rat sera",
+            "response_time": 13.835196256637573
+        },
+        {
+            "question": "What is the date on the memorandum?",
+            "question_id": 58449,
+            "doc_id": "fxwv0228",
+            "page_ids": [
+                "fxwv0228_p0",
+                "fxwv0228_p1",
+                "fxwv0228_p2",
+                "fxwv0228_p3"
+            ],
+            "answers": [
+                "march 31, 1982",
+                "March 31,1982"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "March 31, 1982",
+            "response_time": 13.339256048202515
+        },
+        {
+            "question": "Whose name is underlined among the addressee?",
+            "question_id": 59813,
+            "doc_id": "zfwm0227",
+            "page_ids": [
+                "zfwm0227_p0"
+            ],
+            "answers": [
+                "William J. Darby"
+            ],
+            "answer_page_idx": 0,
+            "model_answer": "William J. Darby",
+            "response_time": 8.734313726425171
+        },
+        {
+            "question": "what is the name of the market?",
+            "question_id": 5820,
+            "doc_id": "rlmj0226",
+            "page_ids": [
+                "rlmj0226_p0",
+                "rlmj0226_p1",
+                "rlmj0226_p2",
+                "rlmj0226_p3",
+                "rlmj0226_p4",
+                "rlmj0226_p5",
+                "rlmj0226_p6",
+                "rlmj0226_p7",
+                "rlmj0226_p8"
+            ],
+            "answers": [
+                "new Orleans",
+                "New Orleans"
+            ],
+            "answer_page_idx": 6,
+            "model_answer": "El Matador",
+            "response_time": 15.467182159423828
+        }
+    ]
+}

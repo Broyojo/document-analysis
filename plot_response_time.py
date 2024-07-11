@@ -8,7 +8,11 @@ include_quadratic_fit = False
 
 # Load data from the JSON file
 with open("eval_data.json", "r") as file:
-    data = json.load(file)
+    try:
+        data = json.load(file)["data"]
+    except:
+        data = json.load(file)
+
 
 # Extract number of documents (pages) and response times
 num_docs = np.array([len(item["page_ids"]) for item in data])

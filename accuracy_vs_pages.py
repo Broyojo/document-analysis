@@ -7,7 +7,10 @@ from scipy import stats
 
 def compute_accuracy(file_path):
     with open(file_path, "r") as file:
-        data = json.load(file)
+        try:
+            data = json.load(file)["data"]
+        except:
+            data = json.load(file)
 
     accuracy_data = defaultdict(lambda: {"correct": 0, "total": 0})
 
@@ -114,7 +117,7 @@ def plot_accuracy_results(accuracy_results):
 
 # Main execution
 if __name__ == "__main__":
-    file_path = "eval_data_ocr_only_400.json"
+    file_path = "eval_data.json"
     accuracy_results = compute_accuracy(file_path)
     print_accuracy_results(accuracy_results)
     plot_accuracy_results(accuracy_results)

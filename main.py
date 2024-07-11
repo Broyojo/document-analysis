@@ -8,8 +8,11 @@ from tqdm import tqdm
 from calc_ci import wilson_score_interval
 from ocr import ocr, parallel_ocr
 
-SEED = 42069
-OCR_ONLY = True
+SEED = 12345
+
+# currently doing: image first, ocr second in prompt
+ENABLE_OCR = True
+ENABLE_IMAGE = True
 
 random.seed(SEED)
 
@@ -67,10 +70,31 @@ try:
             {
                 "role": "system",
                 "content": "You are an assistant which extracts information from documents. Output the final answer with no other extraneous text.",  # TODO: experiment with better prompt structure (https://arxiv.org/pdf/2312.16171). maybe add <thinking></thinking> tokens? however must be careful to not balloon latency and cost
-            },
+            }
         ]
 
-        if not OCR_ONLY:
+        if ENABLE_IMAGE and ENABLE_OCR:
+            image_paths = [f"/mnt/ssd/images/{page_id}.jpg" for page_id in page_ids]
+            ocr_start = time.time()
+            ocr_results = parallel_ocr(image_paths)
+            ocr_time = time.time() - ocr_start
+            input = [{"type": "text", "text": question}]
+
+            for image_path, ocr_result in zip(image_paths, ocr_results):
+                input.extend(
+                    [
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{encode_base64(image_path)}"
+                            },
+                        },
+                        {"type": "text", "text": ocr_result["content"]},
+                    ]
+                )
+
+            prompt.append({"role": "user", "content": input})
+        elif ENABLE_IMAGE:
             prompt.append(
                 {
                     "role": "user",
@@ -89,7 +113,7 @@ try:
                     ],
                 }
             )
-        else:
+        elif ENABLE_OCR:
             ocr_concated = ""
             ocr_start = time.time()
             image_paths = [f"/mnt/ssd/images/{page_id}.jpg" for page_id in page_ids]
@@ -144,7 +168,7 @@ try:
                 "answers": answers,
                 "answer_page_idx": answer_page_idx,
                 "model_answer": model_answer,
-                "response_time": response_time + (ocr_time if OCR_ONLY else 0),
+                "response_time": response_time + (ocr_time if ENABLE_OCR else 0),
             }
         )
 
@@ -163,6 +187,23 @@ except Exception as e:
 
     print(traceback.format_exc())
 finally:
-    print("Accuracy:", total_correct / count * 100)
+    accuracy = total_correct / count
+    lower, upper = wilson_score_interval(accuracy, count)
+    dist = (upper - lower) / 2
+    acc_str = f"{total_correct / count * 100:.2f}% ± {dist * 100:.2f}%"
+    print(
+        f"Final Accuracy: {acc_str}",
+    )
     with open("eval_data.json", "w") as f:
-        json.dump(eval_data, f, indent=4)
+        json.dump(
+            {
+                "seed": SEED,
+                "enable_ocr": ENABLE_OCR,
+                "enable_image": ENABLE_IMAGE,
+                "accuracy": accuracy,
+                "accuracy_stdev": dist,
+                "data": eval_data,
+            },
+            f,
+            indent=4,
+        )

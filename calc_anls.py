@@ -5,7 +5,10 @@ from anls import anls_score
 
 def process_eval_data(file_path, anls_threshold=0.5):
     with open(file_path, "r") as file:
-        data = json.load(file)
+        try:
+            data = json.load(file)["data"]
+        except:
+            data = json.load(file)
 
     anls_scores = []
     for item in data:
@@ -21,7 +24,7 @@ def process_eval_data(file_path, anls_threshold=0.5):
 
 
 def main():
-    file_path = "eval_data_ocr_only_400.json"
+    file_path = "eval_data.json"
     anls_threshold = 0.5  # You can adjust this if needed
 
     overall_anls, individual_scores = process_eval_data(file_path, anls_threshold)
