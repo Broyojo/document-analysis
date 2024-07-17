@@ -1,3 +1,4 @@
+from collections import defaultdict
 import os
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.documentintelligence import DocumentIntelligenceClient
@@ -20,7 +21,7 @@ def ocr(image_paths: list[str]) -> list[AnalyzeResult]:
     def ocr_single(image_path: str) -> AnalyzeResult:
         with open(image_path, "rb") as f:
             poller = document_intelligence_client.begin_analyze_document(
-                "prebuilt-read",
+                "prebuilt-layout",
                 analyze_request=f,
                 content_type="application/octet-stream",
             )
@@ -40,21 +41,22 @@ def ocr(image_paths: list[str]) -> list[AnalyzeResult]:
     return results
 
 
-def find_sentence_words(quote, page_words, match_threshold=30):
+def find_best_sentence_match(quote, page_words, threshold=50):
     quote_words = quote.lower().split()
-    matched_words = []
-    i = 0
-    for page_word in page_words:
-        if i >= len(quote_words):
-            break
-        if fuzz.ratio(quote_words[i], page_word["content"].lower()) > match_threshold:
-            matched_words.append(page_word)
-            i += 1
-        elif len(matched_words) > 0:
-            # If we've started matching but this word doesn't match, reset
-            matched_words = []
-            i = 0
-    return matched_words if len(matched_words) == len(quote_words) else []
+    best_match = []
+    best_score = 0
+
+    for i in range(len(page_words) - len(quote_words) + 1):
+        window = page_words[i : i + len(quote_words)]
+        score = sum(
+            fuzz.ratio(q, w["content"].lower()) for q, w in zip(quote_words, window)
+        ) / len(quote_words)
+
+        if score > best_score:
+            best_score = score
+            best_match = window
+
+    return best_match if best_score >= threshold else []
 
 
 def get_bounding_box(words):
@@ -67,33 +69,45 @@ def get_bounding_box(words):
     return [x_min, y_min, x_max, y_max]
 
 
-def highlight_quote(image_path, quote, page_words):
-    img = Image.open(image_path)
-    draw = ImageDraw.Draw(img)
+def highlight_quotes(image_path, quotes, page_words):
+    img = Image.open(image_path).convert("RGBA")
+    highlight_layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(highlight_layer)
 
-    matched_words = find_sentence_words(quote, page_words)
-    if matched_words:
-        bounding_box = get_bounding_box(matched_words)
-        if bounding_box:
-            draw.rectangle(bounding_box, outline="red", width=2)
-    else:
-        print(f"Could not find a match for: {quote}")
+    for quote in quotes:
+        matched_words = find_best_sentence_match(quote, page_words)
+        if matched_words:
+            bounding_box = get_bounding_box(matched_words)
+            if bounding_box:
+                # Draw a semi-transparent yellow highlight
+                draw.rectangle(bounding_box, fill=(255, 255, 0, 80))
+            print(f"✅ Match found for: {quote}")
+            print(f"=> Matched words: {[word['content'] for word in matched_words]}")
+        else:
+            print(f"❌ Could not find a match for: {quote}")
 
-    return img
+    # Combine the original image with the highlight layer
+    highlighted_img = Image.alpha_composite(img, highlight_layer).convert("RGB")
+    return highlighted_img
 
 
 def process_quotes(model_answer, ocr_results, image_paths):
+    # Group quotes by page
+    quotes_by_page = defaultdict(list)
     for quote_info in model_answer["quotes"]:
-        quote = quote_info["quote"]
-        page = quote_info["page"] - 1  # Adjust for 0-based indexing
+        quotes_by_page[quote_info["page"]].append(quote_info["quote"])
 
-        if page < len(ocr_results):
-            page_words = ocr_results[page]["pages"][0]["words"]
-            highlighted_img = highlight_quote(image_paths[page], quote, page_words)
+    for page, quotes in quotes_by_page.items():
+        page_index = page - 1  # Adjust for 0-based indexing
+        if page_index < len(ocr_results):
+            page_words = ocr_results[page_index]["pages"][0]["words"]
+            highlighted_img = highlight_quotes(
+                image_paths[page_index], quotes, page_words
+            )
 
             # Save the highlighted image
-            output_path = f"output/highlighted_page_{page+1}.jpg"
+            output_path = f"output/highlighted_page_{page}.jpg"
             highlighted_img.save(output_path)
             print(f"Highlighted image saved as {output_path}")
         else:
-            print(f"Page {page+1} not found in OCR results")
+            print(f"Page {page} not found in OCR results")

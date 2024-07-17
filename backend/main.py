@@ -33,18 +33,20 @@ def save_pdf_to_images(pdf_path: str) -> list[str]:
 # TODO: make this multi-query (run gpt multiple times or do multi-query ranking??)
 def pipe(doc_path: str, queries: list[str]):
     image_paths, temp_dir = save_pdf_to_images(doc_path)
-    search_results = search_top_k(image_paths, queries, k=5)[0]
+    search_results = search_top_k(image_paths, queries, k=4)[0]
 
     # TODO: improve this prompt, maybe add CoT before answering instead of only allowing JSON output final answer?
     prompt = [
         {
             "role": "system",
-            "content": "You are an assistant which extracts information from documents. Output the final JSON answer with no other extraneous text. With your answer, please provide the direct quotes from the document that support your answer. Here is the output schema: {'answer': '...', 'quotes': [{'quote': '...', 'page': 42}, ...]}.",
+            "content": "You are an assistant which extracts information from documents. Output the final JSON answer with no other extraneous text. With your answer, please provide the direct quotes from the document that support your answer. Here is the output schema: {'answer': '...', 'quotes': [{'quote': '...', 'page': 42}, ...]}. Do NOT put any ellipses within a quote, each quote must be an exact match from the document.",
         }
     ]
 
     input = [{"type": "text", "text": queries[0]}]
 
+    # TODO: maybe give gpt-4o the OCR results along with the images so that it has an easier time quoting?
+    # TODO: a better strategy is probably giving the quotes to embedding model and finding area with highest attention, maybe try to highlight patches which are most relevant to the quote. this will allow for highlighting figures, tables, etc.
     for result in search_results:
         input.extend(
             [
@@ -84,8 +86,8 @@ def pipe(doc_path: str, queries: list[str]):
 
 
 if __name__ == "__main__":
-    doc_path = "/home/broyojo/Downloads/2212.05935v2.pdf"
+    doc_path = "./medical.pdf"
     pipe(
         doc_path,
-        ["What is the distribution of document pages in the dataset they propose?"],
+        ["What is the diagnosis?"],
     )
