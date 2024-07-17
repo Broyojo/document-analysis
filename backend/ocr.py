@@ -25,13 +25,11 @@ def ocr(image_paths: list[str]) -> list[AnalyzeResult]:
         result = poller.result()
         return result
 
-    with concurrent.futures.ThreadPoolExecutor(
-        max_workers=len(image_paths)
-    ) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         results = list(
             executor.map(
-                lambda x: ocr_single(x),
-                image_paths,
+                lambda x: (x[0], ocr_single(x[1])),
+                enumerate(image_paths),
             )
         )
 

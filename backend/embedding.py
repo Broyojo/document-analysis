@@ -11,7 +11,7 @@ from colpali_engine.utils.colpali_processing_utils import (
 from tqdm import tqdm
 from transformers import AutoProcessor
 from colpali_engine.utils.image_from_page_utils import load_from_dataset
-from PIL.Image import Image
+from PIL import Image
 
 
 class DocumentEmbeddingModel:
@@ -26,7 +26,7 @@ class DocumentEmbeddingModel:
         self.model.load_adapter(adapter_name)
         self.processor = AutoProcessor.from_pretrained(adapter_name)
 
-    def embed_docs(self, images: list[Image]) -> list[torch.Tensor]:
+    def embed_docs(self, images: list) -> list[torch.Tensor]:
         dataloader = DataLoader(
             images,
             batch_size=8,
@@ -74,7 +74,7 @@ class SearchResult:
 
 def search_top_k(
     doc_paths: list[str], queries: list[str], k: int = 20
-) -> list[SearchResult]:
+) -> list[list[SearchResult]]:
     model = DocumentEmbeddingModel()
     docs = [Image.open(path) for path in doc_paths]
     doc_embeds = model.embed_docs(docs)
