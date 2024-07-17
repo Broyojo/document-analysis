@@ -1,5 +1,6 @@
+import json
 import tempfile
-from ocr import ocr
+from ocr import ocr, process_quotes
 from embedding import search_top_k
 import base64
 from openai import OpenAI
@@ -34,10 +35,11 @@ def pipe(doc_path: str, queries: list[str]):
     image_paths, temp_dir = save_pdf_to_images(doc_path)
     search_results = search_top_k(image_paths, queries, k=5)[0]
 
+    # TODO: improve this prompt, maybe add CoT before answering instead of only allowing JSON output final answer?
     prompt = [
         {
             "role": "system",
-            "content": "You are an assistant which extracts information from documents. Output the final answer with no other extraneous text. With your answer, please provide the direct quotes from the document that support your answer. Here is the output schema: {'answer': '...', 'quotes': [{'quote': '...', 'page': 42}, ...]}.",
+            "content": "You are an assistant which extracts information from documents. Output the final JSON answer with no other extraneous text. With your answer, please provide the direct quotes from the document that support your answer. Here is the output schema: {'answer': '...', 'quotes': [{'quote': '...', 'page': 42}, ...]}.",
         }
     ]
 
@@ -48,7 +50,7 @@ def pipe(doc_path: str, queries: list[str]):
             [
                 {
                     "type": "text",
-                    "text": f"Page {image_paths.index(result.doc_path)}",  # true page number
+                    "text": f"Page {image_paths.index(result.doc_path)+1}",  # true page number
                 },
                 {
                     "type": "image_url",
@@ -64,6 +66,7 @@ def pipe(doc_path: str, queries: list[str]):
     model_answer = ""
     for chunk in client.chat.completions.create(
         model="gpt-4o",
+        response_format={"type": "json_object"},  # enforce json output
         messages=prompt,
         stream=True,
     ):
@@ -73,7 +76,16 @@ def pipe(doc_path: str, queries: list[str]):
             model_answer += content
     print()
 
+    model_answer = json.loads(model_answer)
+
+    ocr_results = ocr(image_paths)
+
+    process_quotes(model_answer, ocr_results, image_paths)
+
 
 if __name__ == "__main__":
     doc_path = "/home/broyojo/Downloads/2212.05935v2.pdf"
-    pipe(doc_path, ["What is the system diagram showing?"])
+    pipe(
+        doc_path,
+        ["What is the distribution of document pages in the dataset they propose?"],
+    )
