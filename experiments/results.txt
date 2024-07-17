@@ -1,0 +1,6 @@
+Method         Accuracy              ANLS 
+----------------------------------------------
+Image-Only: 80.75% +- 3.86% Acc.   0.78 ANLS
+OCR-Only:   79.25% +- 3.96% Acc.   0.57 ANLS
+Image+OCR:  79.35% +- 3.97% Acc.   0.72 ANLS
+
