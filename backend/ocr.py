@@ -98,11 +98,10 @@ def process_quotes(model_answer, ocr_results, image_paths):
         quotes_by_page[quote_info["page"]].append(quote_info["quote"])
 
     for page, quotes in quotes_by_page.items():
-        page_index = page - 1  # Adjust for 0-based indexing
-        if page_index < len(ocr_results):
-            page_words = ocr_results[page_index]["pages"][0]["words"]
+        if page in ocr_results:
+            page_words = ocr_results[page]["pages"][0]["words"]
             highlighted_img = highlight_quotes(
-                image_paths[page_index], quotes, page_words
+                image_paths[page - 1], quotes, page_words
             )
 
             # Save the highlighted image

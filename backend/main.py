@@ -31,9 +31,11 @@ def save_pdf_to_images(pdf_path: str) -> list[str]:
 
 
 # TODO: make this multi-query (run gpt multiple times or do multi-query ranking??)
-def pipe(doc_path: str, queries: list[str]):
-    image_paths, temp_dir = save_pdf_to_images(doc_path)
-    search_results = search_top_k(image_paths, queries, k=4)[0]
+def pipe(doc_path: str, queries: list[str], image_paths=None):
+    if image_paths is None:
+        image_paths, temp_dir = save_pdf_to_images(doc_path)
+
+    search_results = search_top_k(image_paths, queries, k=10)[0]
 
     # TODO: improve this prompt, maybe add CoT before answering instead of only allowing JSON output final answer?
     prompt = [
@@ -80,14 +82,50 @@ def pipe(doc_path: str, queries: list[str]):
 
     model_answer = json.loads(model_answer)
 
-    ocr_results = ocr(image_paths)
+    pages = set()
+    for quote in model_answer["quotes"]:
+        pages.add(quote["page"])
 
-    process_quotes(model_answer, ocr_results, image_paths)
+    sorted_pages = sorted(pages)
+
+    ocr_results = ocr([image_paths[page - 1] for page in sorted_pages])
+
+    map = {page: result for page, result in zip(sorted_pages, ocr_results)}
+
+    process_quotes(model_answer, map, image_paths)
+
+    if image_paths is None:
+        temp_dir.cleanup()
 
 
 if __name__ == "__main__":
-    doc_path = "./medical.pdf"
-    pipe(
-        doc_path,
-        ["What is the diagnosis?"],
-    )
+    single = True
+    if single:
+        doc_path = "./test_docs/ts_136101v140300p.pdf"
+        pipe(
+            doc_path,
+            ["which LTE bands are suitable for power classs 1 operation?"],
+        )
+    else:
+        import random
+        from pathlib import Path
+
+        with open("../datasets/mp-docvqa/val.json", "r") as f:
+            data = [d for d in json.load(f)["data"] if len(d["page_ids"]) == 20]
+
+        sample = random.choice(data)
+
+        print(json.dumps(sample, indent=4))
+
+        files = [
+            str(path)
+            for path in Path("/mnt/ssd/images/").glob(f"{sample['doc_id']}*.jpg")
+        ]
+
+        print(f"loaded {len(files)} pages")
+
+        pipe(
+            None,
+            [sample["question"]],
+            image_paths=files,
+        )

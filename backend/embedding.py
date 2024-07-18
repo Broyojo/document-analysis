@@ -29,25 +29,26 @@ class DocumentEmbeddingModel:
     def embed_docs(self, images: list) -> list[torch.Tensor]:
         dataloader = DataLoader(
             images,
-            batch_size=8,
+            batch_size=4,
             shuffle=False,
             collate_fn=lambda x: process_images(self.processor, x),
         )
 
         embeddings = []
         for docs in tqdm(dataloader):
-            with torch.inference_mode():
+            with torch.inference_mode(), torch.cuda.amp.autocast():
                 embeds = self.model(
                     **{k: v.to(self.model.device) for k, v in docs.items()}
                 )
             embeddings.extend(list(torch.unbind(embeds.to("cpu"))))
+            torch.cuda.empty_cache()
 
         return embeddings
 
     def embed_queries(self, queries: list[str]) -> list[torch.Tensor]:
         dataloader = DataLoader(
             queries,
-            batch_size=8,
+            batch_size=4,
             shuffle=False,
             collate_fn=lambda x: process_queries(
                 self.processor, x, Image.new("RGB", (448, 448), (255, 255, 255))
@@ -56,11 +57,12 @@ class DocumentEmbeddingModel:
 
         embeddings = []
         for queries in tqdm(dataloader):
-            with torch.inference_mode():
+            with torch.inference_mode(), torch.cuda.amp.autocast():
                 embed = self.model(
                     **{k: v.to(self.model.device) for k, v in queries.items()}
                 )
-            embeddings.extend(list(torch.unbind(embed.to("cpu"))))
+            embeddings.extend(list(torch.unbind(embed.to("cpu").detach())))
+            torch.cuda.empty_cache()
 
         return embeddings
 
